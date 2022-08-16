@@ -142,23 +142,31 @@ This guideline was proposed in [#6156](https://github.com/mdn/browser-compat-dat
 
 If you set `"partial_implementation": true`, then write a note describing how the implementation is incomplete.
 
+Typically, when the implementation is partial due to a bug or limitation in a browser, the note should describe that and any possible workaround, and preferably link to any open issue on the browser for them.
+
 This guideline was proposed in [#7332](https://github.com/mdn/browser-compat-data/pull/7332).
 
-## Non-functional defined names imply `"partial_implementation"`
+### Support status
 
-If a browser recognizes an API name, but the API doesn’t have any discernable behavior, use `"partial_implementation": true` instead of `"version_added": false`, as if the feature has non-standard support, rather than no support.
+The decision as to whether something is unsupported, partially supported, or (fully) supported is ultimately an editorial decision.
 
-For example, suppose there is some specification for a Web API `NewFeature.method()`. Running `typeof NewFeature.method` in some browser returns `function` (not `undefined`), but the method, when called, returns `null` instead of an expected value. For that feature, set `"partial_implementation": true` and write a note describing the feature’s misbehavior.
+The simplest state to explain is “unsupported”: if a feature is entirely absent then it should be marked as unsupported  (`"version_added": false`).
 
-See [#3904](https://github.com/mdn/browser-compat-data/pull/3904#issuecomment-484433603) for additional background (and nuance).
+Distinguishing the other two is harder; but as some guidelines consider the following:
 
-## Operating system limitations imply `"partial_implementation"`
+If a browser recognizes a feature, but the feature doesn’t have any discernable behavior, then it should be marked as partially supported (`"partial_implementation": true`), as if the feature has non-standard support, rather than no support.
+
+For example, suppose there is some specification for a Web API `NewFeature.method()`. Running `typeof NewFeature.method` in some browser returns `function` (not `undefined`), but the method, when called, returns `null` instead of an expected value. For that feature, set `"partial_implementation": true` and write a [note](#partial_implementation-requires-a-note) describing the feature’s misbehavior.
+
+If the implementation has bugs which it is likely a large percentage of web developers will encounter when attempting to use the feature, then it should be marked as a partial implementation with an appropriate [note](#partial_implementation-requires-a-note).
+
+If the implementation is only supported in specific contexts (for example, if `break-before` is only supported for printed pages but not for other types of fragmentation, such as multi-column layout), then it should be marked as a partial implementation with an appropriate [note](#partial_implementation-requires-a-note).
 
 If a browser or engine is available on more than one operating system and a feature is only implemented on a subset of those operating systems, then the support statement should set `"partial_implementation": true`. For example, if a browser supports both Windows and Linux, but only implements a feature on Windows, then a support statement for that feature should should set `"partial_implementation": true` (and a [note](#partial_implementation-requires-a-note)).
 
 However, this guideline does not apply to features where the browser's expected behavior is conditional on the behavior of the operating system itself. For example, a browser can fully implement a CSS media query even if an underlying operating system can never satisfy the media query's condition because it does not support the requisite hardware.
 
-This guideline was proposed in [#6906](https://github.com/mdn/browser-compat-data/issues/6906).
+See [#6906](https://github.com/mdn/browser-compat-data/issues/6906) and [#3904](https://github.com/mdn/browser-compat-data/pull/3904#issuecomment-484433603) for additional background (and nuance).
 
 ## Constants
 
@@ -223,35 +231,22 @@ This decision was proposed in [#7238](https://github.com/mdn/browser-compat-data
 
 Features can be removed from BCD if it is considered irrelevant. A feature can be considered irrelevant if any of these conditions are met:
 
-- a feature was never implemented in any browser.
+- a feature was never implemented in any browser and the specification has been abandoned.
 - a feature was implemented and has since been removed from all browsers dating back two or more years ago.
 - a feature is unsupported in all releases in the past five years.
 
-This guideline was proposed in [#6018](https://github.com/mdn/browser-compat-data/pull/6018) and updated in [#10619](https://github.com/mdn/browser-compat-data/pull/10619).
+This guideline was proposed in [#6018](https://github.com/mdn/browser-compat-data/pull/6018).
 
 ## Removal of irrelevant flag data
 
-Flag data is helpful for developers who may wish to test features before they are included in a stable release. However, once a feature has landed in a stable browser release, the flag data quickly becomes irrelevant and may be removed from BCD. To be considered irrelevant, the flag support statement must meet these conditions:
+Valid support statements containing flags can be removed from BCD if it is considered irrelevant. To be considered irrelevant, the support statement must meet these conditions:
 
-- The browser has supported the feature by default.
-- The feature can no longer be enabled by toggling the flag.
-- The flag has been removed from the browser.
+- As of at least two years ago, the browser has supported the feature by default or removed the flagged feature.
+- The removal of the support statement must not create an ambiguous gap or void in the data for that browser (for example, leaving behind only a `"version_added": true` or `null` value).
 
 These conditions represent minimum requirements for the removal of valid flag data; other considerations may result in flag data continuing to be relevant, even after the guideline conditions are met.
 
-This guideline was proposed in [#6670](https://github.com/mdn/browser-compat-data/pull/6670) and revised in [#16637](https://github.com/mdn/browser-compat-data/pull/16637).
-
-## Features with no browser support
-
-Browser features that have not been implemented in any browser, or are planned to be implemented, should not be added to BCD. A feature should not be added if all of the following conditions are met:
-
-- The feature has not been included in a stable browser release.
-- The feature is not implemented behind a current flag (or Chrome origin trial).
-- There is no tracking bug for the browser to indicate intent to implement.
-
-Some features may already be added to BCD that do not have any browser support. These features will be removed over time.
-
-This guideline was proposed in [#10619](https://github.com/mdn/browser-compat-data/pull/10619).
+This guideline was proposed in [#6670](https://github.com/mdn/browser-compat-data/pull/6670).
 
 ## When to add `version_removed` to flagged support
 
@@ -282,7 +277,20 @@ This guideline was proposed in [#6861](https://github.com/mdn/browser-compat-dat
 
 For example, [`HTMLHyperlinkElementUtils`](https://html.spec.whatwg.org/multipage/links.html#htmlhyperlinkelementutils) is a mixin defined in the HTML specification.
 
-Members of this mixin are available to `HTMLAnchorElement` and `HTMLAreaElement`, that's where BCD exposes them. Add mixin members directly to the corresponding interface they're exposed on. For example, add members of `HTMLHyperlinkElementUtils` directly to the `api/HTMLAnchorElement.json` and `api/HTMLAreaElement.json` files as if they were regular members of these interfaces.
+Members of this mixin are available to `HTMLAnchorElement` and `HTMLAreaElement`, that's where BCD exposes them. Add mixin members to BCD in one of these ways:
+
+1. For smaller mixins, add members of `HTMLHyperlinkElementUtils` directly to the `api/HTMLAnchorElement.json` and `api/HTMLAreaElement.json` files as if they were regular members of these interfaces.
+
+2. For larger mixins, create a file in the `api/_mixins/` folder and indicate for which interface they are using file names like: `HTMLHyperlinkElementUtils__HTMLAnchorElement.json` and `HTMLHyperlinkElementUtils__HTMLAreaElement.json`.
+   In these files, expose the data under the correct tree. For `HTMLHyperlinkElementUtils__HTMLAnchorElement.json`, the file needs to start like this:
+
+   ```
+   {
+     "api": {
+       "HTMLAnchorElement": {
+         "myFeatureName": {
+           "__compat": {
+   ```
 
 This guideline was proposed in [#8929](https://github.com/mdn/browser-compat-data/issues/8929), based in part on previous discussion in [#472](https://github.com/mdn/browser-compat-data/issues/472).
 
