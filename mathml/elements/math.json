@@ -1,0 +1,139 @@
+{
+  "mathml": {
+    "elements": {
+      "math": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Element/math",
+          "spec_url": "https://w3c.github.io/mathml-core/#the-top-level-math-element",
+          "support": {
+            "chrome": {
+              "version_added": "24",
+              "version_removed": "25",
+              "notes": "See <a href='https://crbug.com/6606'>bug 6606</a>."
+            },
+            "chrome_android": "mirror",
+            "edge": {
+              "version_added": false,
+              "notes": "See <a href='https://crbug.com/6606'>bug 6606</a>."
+            },
+            "firefox": [
+              {
+                "version_added": "4"
+              },
+              {
+                "version_added": "1",
+                "partial_implementation": true,
+                "notes": "Only supported in XHTML documents."
+              }
+            ],
+            "firefox_android": {
+              "version_added": "4"
+            },
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": {
+              "version_added": "9.5",
+              "version_removed": "15",
+              "partial_implementation": true,
+              "notes": "Only supported in XHTML documents."
+            },
+            "opera_android": {
+              "version_added": "10.1",
+              "version_removed": "14",
+              "partial_implementation": true,
+              "notes": "Only supported in XHTML documents."
+            },
+            "safari": {
+              "version_added": "5.1"
+            },
+            "safari_ios": {
+              "version_added": "5"
+            },
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        },
+        "display": {
+          "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Element/math#attr-display",
+            "support": {
+              "chrome": {
+                "version_added": "24",
+                "version_removed": "25"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "1"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "5.1"
+              },
+              "safari_ios": {
+                "version_added": "5"
+              },
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "mode": {
+          "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Element/math#attr-mode",
+            "support": {
+              "chrome": {
+                "version_added": "24",
+                "version_removed": "25"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "1",
+                "version_removed": "70"
+              },
+              "firefox_android": {
+                "version_added": "4"
+              },
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

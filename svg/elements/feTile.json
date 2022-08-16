@@ -1,0 +1,88 @@
+{
+  "svg": {
+    "elements": {
+      "feTile": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Element/feTile",
+          "spec_url": "https://drafts.fxtf.org/filter-effects/#feTileElement",
+          "support": {
+            "chrome": {
+              "version_added": true
+            },
+            "chrome_android": "mirror",
+            "edge": {
+              "version_added": "12"
+            },
+            "firefox": {
+              "version_added": "4"
+            },
+            "firefox_android": {
+              "version_added": true
+            },
+            "ie": {
+              "version_added": true
+            },
+            "oculus": "mirror",
+            "opera": {
+              "version_added": "9"
+            },
+            "opera_android": {
+              "version_added": null
+            },
+            "safari": {
+              "version_added": null
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        },
+        "in": {
+          "__compat": {
+            "support": {
+              "chrome": {
+                "version_added": true
+              },
+              "chrome_android": "mirror",
+              "edge": {
+                "version_added": "12"
+              },
+              "firefox": {
+                "version_added": "4"
+              },
+              "firefox_android": {
+                "version_added": true
+              },
+              "ie": {
+                "version_added": true
+              },
+              "oculus": "mirror",
+              "opera": {
+                "version_added": "9"
+              },
+              "opera_android": {
+                "version_added": null
+              },
+              "safari": {
+                "version_added": null
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        }
+      }
+    }
+  }
+}

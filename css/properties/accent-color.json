@@ -1,0 +1,67 @@
+{
+  "css": {
+    "properties": {
+      "accent-color": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/accent-color",
+          "spec_url": "https://drafts.csswg.org/css-ui/#widget-accent",
+          "support": {
+            "chrome": [
+              {
+                "version_added": "93"
+              },
+              {
+                "version_added": "91",
+                "version_removed": "93",
+                "flags": [
+                  {
+                    "name": "#enable-experimental-web-platform-features",
+                    "type": "preference",
+                    "value_to_set": "enabled"
+                  }
+                ]
+              }
+            ],
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": [
+              {
+                "version_added": "92"
+              },
+              {
+                "version_added": "90",
+                "version_removed": "92",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "layout.css.accent-color.enabled",
+                    "value_to_set": "enabled"
+                  }
+                ],
+                "notes": "Enabled by default in Firefox Nightly."
+              }
+            ],
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "15.4"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      }
+    }
+  }
+}

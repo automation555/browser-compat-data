@@ -1,0 +1,82 @@
+{
+  "html": {
+    "elements": {
+      "template": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Element/template",
+          "spec_url": "https://html.spec.whatwg.org/multipage/scripting.html#the-template-element",
+          "support": {
+            "chrome": {
+              "version_added": "26"
+            },
+            "chrome_android": "mirror",
+            "edge": {
+              "version_added": "13"
+            },
+            "firefox": {
+              "version_added": "22"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": {
+              "version_added": null
+            },
+            "safari": {
+              "version_added": "8"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": {
+              "version_added": true
+            }
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        },
+        "shadowroot": {
+          "__compat": {
+            "support": {
+              "chrome": {
+                "version_added": "90"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": {
+                "version_added": false
+              },
+              "opera_android": {
+                "version_added": false
+              },
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        }
+      }
+    }
+  }
+}
