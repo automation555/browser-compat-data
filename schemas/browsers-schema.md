@@ -84,6 +84,8 @@ The `releases` object contains data regarding the browsers' releases, using the 
 
 - An optional `engine_version` property which is the version of the browser's engine. Depending on the browser, this may or may not differ from the browser version.
 
+- An optional `upstream_version` which is the upstream browser's version that will map to this release. Used in mirroring when the engine version does not match.
+
 ## Exports
 
 This structure is exported for consumers of `@mdn/browser-compat-data`:

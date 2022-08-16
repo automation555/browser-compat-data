@@ -16,37 +16,9 @@ import bcd from '../../index.js';
 const { browsers } = bcd;
 
 /**
- * @typedef {import('../types').Identifier} Identifier
- * @typedef {import('../types').SupportStatement} SupportStatement
- * @typedef {import('../types').ReleaseStatement} ReleaseStatement
- */
-
-const matchingSafariVersions = new Map([
-  ['≤4', '≤3'],
-  ['1', '1'],
-  ['1.1', '1'],
-  ['1.2', '1'],
-  ['1.3', '1'],
-  ['2', '1'],
-  ['3', '2'],
-  ['3.1', '2'],
-  ['4', '3.2'],
-  ['5', '4.2'],
-  ['5.1', '6'],
-  ['9.1', '9.3'],
-  ['10.1', '10.3'],
-  ['11.1', '11.3'],
-  ['12.1', '12.2'],
-  ['13.1', '13.4'],
-  ['14.1', '14.5'],
-]);
-
-/**
- * Convert a version number to the matching version of the target browser
- *
- * @param {string} targetBrowser The browser to mirror to
- * @param {string} sourceVersion The version from the source browser
- * @returns {ReleaseStatement|boolean} The matching browser version
+ * @param {string} targetBrowser
+ * @param {string} sourceVersion
+ * @returns {ReleaseStatement|boolean}
  */
 export const getMatchingBrowserVersion = (
   targetBrowser: BrowserName,
@@ -60,21 +32,6 @@ export const getMatchingBrowserVersion = (
     throw new Error('Browser does not have an upstream browser set.');
   }
   /* c8 ignore stop */
-
-  if (targetBrowser === 'safari_ios') {
-    // The mapping between Safari macOS and iOS releases is complicated and
-    // cannot be entirely derived from the WebKit versions. After Safari 15
-    // the versions have been the same, so map earlier versions manually
-    // and then assume if the versions are identical it's also a match.
-    const v = matchingSafariVersions.get(sourceVersion);
-    if (v) {
-      return v;
-    }
-    if (sourceVersion in browserData.releases) {
-      return sourceVersion;
-    }
-    throw new Error(`Cannot find iOS version matching Safari ${sourceVersion}`);
-  }
 
   const releaseKeys = Object.keys(browserData.releases);
   releaseKeys.sort(compareVersions);
@@ -95,7 +52,10 @@ export const getMatchingBrowserVersion = (
 
   for (const r of releaseKeys) {
     const release = browserData.releases[r];
-    if (
+    if (release.upstream_version == sourceVersion.replace('≤', '')) {
+      // If an `upstream_version` property is defined and matches the source version
+      return range ? `≤${r}` : r;
+    } else if (
       ['chrome', 'chrome_android'].includes(browserData.upstream) &&
       targetBrowser !== 'chrome_android' &&
       release.engine == 'Blink' &&
@@ -108,7 +68,7 @@ export const getMatchingBrowserVersion = (
         ['beta', 'nightly'].includes(release.status) &&
         release.status == sourceRelease.status
       ) {
-        return r;
+        return range ? `≤${r}` : r;
       } else if (
         release.engine_version &&
         sourceRelease.engine_version &&
@@ -118,7 +78,7 @@ export const getMatchingBrowserVersion = (
           '>=',
         )
       ) {
-        return r;
+        return range ? `≤${r}` : r;
       }
     }
   }
@@ -127,13 +87,11 @@ export const getMatchingBrowserVersion = (
 };
 
 /**
- * Update the notes by mirroring the version and replacing the browser name
- *
- * @param {Notes?} notes The notes to update
- * @param {RegExp} regex The regex to check and search
- * @param {string} replace The text to replace with
+ * @param {Notes?} notes
+ * @param {RegExp} regex
+ * @param {string} replace
  * @param {Function} versionMapper - Receives the source browser version and returns the target browser version.
- * @returns {Notes?} The notes with replacement performed
+ * @returns {Notes?}
  */
 const updateNotes = (
   notes: Notes | null,
@@ -160,10 +118,8 @@ const updateNotes = (
 };
 
 /**
- * Copy a support statement
- *
- * @param {SimpleSupportStatement} data The data to copied
- * @returns {SimpleSupportStatement} The new copied object
+ * @param {SimpleSupportStatement} data
+ * @returns {SimpleSupportStatement}
  */
 const copyStatement = (
   data: SimpleSupportStatement,
@@ -177,11 +133,53 @@ const copyStatement = (
 };
 
 /**
- * Perform mirroring of data
- *
- * @param {SupportStatement} sourceData The data to mirror from
- * @param {BrowserName} destination The destination browser
- * @returns {SupportStatement} The mirrored support statement
+ * @param {SimpleSupportStatement} sourceData
+ * @param {BrowserName} targetBrowser
+ * @param {[RegExp, string]} notesRepl
+ * @returns {SimpleSupportStatement}
+ */
+const bumpGeneric = (
+  sourceData: SimpleSupportStatement,
+  targetBrowser: BrowserName,
+  notesRepl?: [RegExp, string],
+): SimpleSupportStatement => {
+  const newData: SimpleSupportStatement = copyStatement(sourceData);
+
+  if (typeof sourceData.version_added === 'string') {
+    newData.version_added = getMatchingBrowserVersion(
+      targetBrowser,
+      sourceData.version_added,
+    );
+  }
+
+  if (
+    sourceData.version_removed &&
+    typeof sourceData.version_removed === 'string'
+  ) {
+    newData.version_removed = getMatchingBrowserVersion(
+      targetBrowser,
+      sourceData.version_removed,
+    );
+  }
+
+  if (notesRepl && sourceData.notes) {
+    const newNotes = updateNotes(
+      sourceData.notes,
+      notesRepl[0],
+      notesRepl[1],
+      (v: string) => getMatchingBrowserVersion(targetBrowser, v),
+    );
+    if (newNotes) {
+      newData.notes = newNotes;
+    }
+  }
+
+  return newData;
+};
+
+/**
+ * @param {SupportStatement} data
+ * @param {BrowserName} destination
  */
 export const bumpSupport = (
   sourceData: SupportStatement,
@@ -217,36 +215,7 @@ export const bumpSupport = (
     notesRepl = [/Chrome/g, 'Samsung Internet'];
   }
 
-  const newData: SimpleSupportStatement = copyStatement(sourceData);
-
-  if (typeof sourceData.version_added === 'string') {
-    newData.version_added = getMatchingBrowserVersion(
-      destination,
-      sourceData.version_added,
-    );
-  }
-
-  if (
-    sourceData.version_removed &&
-    typeof sourceData.version_removed === 'string'
-  ) {
-    newData.version_removed = getMatchingBrowserVersion(
-      destination,
-      sourceData.version_removed,
-    );
-  }
-
-  if (notesRepl && sourceData.notes) {
-    const newNotes = updateNotes(
-      sourceData.notes,
-      notesRepl[0],
-      notesRepl[1],
-      (v: string) => getMatchingBrowserVersion(destination, v),
-    );
-    if (newNotes) {
-      newData.notes = newNotes;
-    }
-  }
+  const newData = bumpGeneric(sourceData, destination, notesRepl);
 
   if (!browsers[destination].accepts_flags && newData.flags) {
     // Remove flag data if the target browser doesn't accept flags
@@ -261,13 +230,6 @@ export const bumpSupport = (
   return newData;
 };
 
-/**
- * Perform mirroring for the target browser
- *
- * @param {BrowserName} destination The browser to mirror to
- * @param {InternalSupportBlock} data The data to mirror with
- * @returns {SupportStatement} The mirrored data
- */
 const mirrorSupport = (
   destination: BrowserName,
   data: InternalSupportBlock,
