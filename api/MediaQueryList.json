@@ -28,11 +28,11 @@
           },
           "safari": {
             "version_added": "5.1",
-            "notes": "Before Safari 14, <code>MediaQueryList</code> is based on <code>EventTarget</code>, so you must use <code>addListener()</code> and <code>removeListener()</code> to observe media query lists."
+            "notes": "Before Safari 14, <code>MediaQueryList</code> was not based on <code>EventTarget</code>, so you must use <code>addListener()</code> and <code>removeListener()</code> to observe media query lists."
           },
           "safari_ios": {
             "version_added": "5",
-            "notes": "Before Safari 14, <code>MediaQueryList</code> is based on <code>EventTarget</code>, so you must use <code>addListener()</code> and <code>removeListener()</code> to observe media query lists."
+            "notes": "Before Safari 14, <code>MediaQueryList</code> was not based on <code>EventTarget</code>, so you must use <code>addListener()</code> and <code>removeListener()</code> to observe media query lists."
           },
           "samsunginternet_android": "mirror",
           "webview_android": {
@@ -43,6 +43,41 @@
           "experimental": false,
           "standard_track": true,
           "deprecated": false
+        }
+      },
+      "EventListener_objects": {
+        "__compat": {
+          "description": "<code>EventListener</code> objects as parameters",
+          "support": {
+            "chrome": {
+              "version_added": "39"
+            },
+            "chrome_android": "mirror",
+            "edge": {
+              "version_added": "≤79"
+            },
+            "firefox": {
+              "version_added": "55"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "14"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
         }
       },
       "EventTarget_inheritance": {
