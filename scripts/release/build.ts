@@ -25,17 +25,14 @@ const targetdir = new URL('./build/', rootdir);
 const verbatimFiles = ['LICENSE', 'README.md'];
 
 /**
- * Generate metadata to embed into BCD builds
- *
- * @returns {any} Metadata to embed into BCD
+ * @returns {any}
  */
 export const generateMeta = (): any => ({ version: packageJson.version });
 
 /**
- * Apply mirroring to all statements
  *
- * @param {CompatData} data The BCD to perform mirroring on
- * @returns {CompatData} BCD with all of the mirroring applied
+ * @param {CompatData} data
+ * @returns {CompatData}
  */
 export const applyMirroring = (data: CompatData): CompatData => {
   const response = Object.assign({}, data);
@@ -58,9 +55,9 @@ export const applyMirroring = (data: CompatData): CompatData => {
 };
 
 /**
- * Generate a BCD data bundle
+ * Returns an object containing the prepared BCD data
  *
- * @returns {CompatData} An object containing the prepared BCD data
+ * @returns {CompatData}
  */
 export const createDataBundle = async (): Promise<CompatData> => {
   const { default: bcd } = await import('../../index.js');
@@ -74,7 +71,7 @@ export const createDataBundle = async (): Promise<CompatData> => {
 /* c8 ignore start */
 
 /**
- * Generate a BCD data bundle and write to the output folder
+ * Returns a promise for writing the data to JSON file
  */
 const writeData = async () => {
   const dest = new URL('data.json', targetdir);
@@ -83,7 +80,7 @@ const writeData = async () => {
 };
 
 /**
- * Write the wrapper for old NodeJS versions
+ *
  */
 const writeWrapper = async () => {
   const dest = new URL('legacynode.mjs', targetdir);
@@ -96,7 +93,7 @@ export default bcd;
 };
 
 /**
- * Write the TypeScript index for TypeScript users
+ *
  */
 const writeTypeScript = async () => {
   const dest = new URL('index.ts', targetdir);
@@ -117,7 +114,7 @@ export * from "./types";`;
 };
 
 /**
- * Copy files from the BCD repo to the output folder
+ * Returns an array of promises for copying of all files that don't need transformation
  */
 const copyFiles = async () => {
   for (const file of verbatimFiles) {
@@ -130,9 +127,7 @@ const copyFiles = async () => {
 /* c8 ignore stop */
 
 /**
- * Generate the JSON for a published package.json
- *
- * @returns {any} A generated package.json for build output
+ * @returns {any}
  */
 export const createManifest = (): any => {
   const minimal: { [index: string]: any } = {
@@ -169,7 +164,7 @@ export const createManifest = (): any => {
 /* c8 ignore start */
 
 /**
- * Write the package.json to the output folder
+ *
  */
 const writeManifest = async () => {
   const dest = new URL('package.json', targetdir);
@@ -178,7 +173,7 @@ const writeManifest = async () => {
 };
 
 /**
- * Perform a build of BCD for publishing
+ *
  */
 const main = async () => {
   // Remove existing files, if there are any
