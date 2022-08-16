@@ -1,7 +1,7 @@
 /* This file is a part of @mdn/browser-compat-data
  * See LICENSE file for more information. */
 
-import { Linter, Logger, LinterData } from '../utils.js';
+import { Linter, Logger } from '../utils.js';
 import {
   BrowserName,
   CompatData,
@@ -16,7 +16,7 @@ import {
   InternalSupportStatement,
 } from '../../types/index.js';
 
-import compareVersions from 'compare-versions';
+import compareVersions from '../../scripts/lib/compare-versions.js';
 import chalk from 'chalk-template';
 import { query } from '../../utils/index.js';
 import mirrorSupport from '../../scripts/release/mirror.js';
@@ -92,18 +92,14 @@ export class ConsistencyChecker {
   }
 
   /**
-   * Get the subfeatures of an identifier
-   *
-   * @param {Identifier} data The identifier
-   * @returns {string[]} The subfeatures
+   * @param {Identifier} data
+   * @return {string[]}
    */
   getSubfeatures(data: Identifier): string[] {
     const subfeatures: string[] = [];
     const keys = Object.keys(data).filter((key) => key != '__compat');
     for (const key of keys) {
-      if (data[key] === undefined) {
-        continue;
-      }
+      if (data[key] === undefined) continue;
 
       if ('__compat' in data[key]) {
         // If the subfeature has compat data
@@ -317,7 +313,7 @@ export class ConsistencyChecker {
    * Get all of the browsers with either unknown or no support in a feature
    *
    * @param {CompatStatement?} compatData The compat data to process
-   * @returns {BrowserName[]} The list of browsers with non-truthy (false or null) support
+   * @returns {Browsername[]} The list of browsers with non-truthy (false or null) support
    */
   extractSupportNotTrueBrowsers(compatData?: CompatStatement): BrowserName[] {
     return this.extractBrowsers(
@@ -371,12 +367,7 @@ export class ConsistencyChecker {
       );
     }
 
-    /**
-     * A convenience function to squash non-real values and previews into null
-     *
-     * @param {SimpleSupportStatement} statement The statement to use
-     * @returns {VersionValue} The version number or 'null'
-     */
+    // A convenience function to squash non-real values and previews into null
     const resolveVersionAddedValue = (
       statement: SimpleSupportStatement,
     ): VersionValue =>
@@ -401,21 +392,13 @@ export class ConsistencyChecker {
       }
 
       if (selectedValue !== null) {
-        if (
-          typeof resolvedValue === 'string' &&
-          typeof selectedValue === 'string'
-        ) {
-          // Earlier value takes precedence
-          const resolvedIsEarlier = compareVersions.compare(
-            resolvedValue.replace('≤', ''),
-            selectedValue.replace('≤', ''),
-            '<',
-          );
-          if (resolvedIsEarlier) {
-            selectedValue = resolvedValue;
-          }
-        } else if (typeof resolvedValue === 'string') {
-          // If selectedValue is bool/null but resolvedValue is string
+        // Earlier value takes precedence
+        const resolvedIsEarlier = compareVersions.compare(
+          resolvedValue,
+          selectedValue,
+          '<',
+        );
+        if (resolvedIsEarlier) {
           selectedValue = resolvedValue;
         } else {
           // If neither are version numbers, assign to the truthiest value
@@ -451,20 +434,7 @@ export class ConsistencyChecker {
       if (b_version_added.startsWith('≤')) {
         return false;
       }
-      if (a_version_added === 'preview' && b_version_added === 'preview') {
-        return false;
-      }
-      if (b_version_added === 'preview') {
-        return true;
-      }
-      if (a_version_added === 'preview') {
-        return false;
-      }
-      return compareVersions.compare(
-        a_version_added.replace('≤', ''),
-        b_version_added,
-        a_version_added.startsWith('≤') ? '<=' : '<',
-      );
+      return compareVersions.compare(a_version_added, b_version_added, '<');
     }
 
     return false;
@@ -484,7 +454,6 @@ export class ConsistencyChecker {
     if (!compatData) {
       return [];
     }
-
     return (Object.keys(compatData.support) as BrowserName[]).filter(
       (browser) => {
         let browserData: InternalSupportStatement = compatData.support[browser];
@@ -496,8 +465,9 @@ export class ConsistencyChecker {
           return browserData.every(callback);
         } else if (typeof browserData === 'object') {
           return callback(browserData);
+        } else {
+          return false;
         }
-        return false;
       },
     );
   }
@@ -507,13 +477,7 @@ export default {
   name: 'Consistency',
   description: 'Test the version consistency between parent and child',
   scope: 'tree',
-  /**
-   * Test the data
-   *
-   * @param {Logger} logger The logger to output errors to
-   * @param {LinterData} root The data to test
-   */
-  check: (logger: Logger, { data }: LinterData) => {
+  check(logger: Logger, { data }: { data: CompatData }) {
     const checker = new ConsistencyChecker();
     const allErrors = checker.check(data);
 

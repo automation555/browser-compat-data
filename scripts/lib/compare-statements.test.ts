@@ -98,19 +98,51 @@ const tests: { input: Identifier; output: Identifier }[] = [
       },
     },
   },
+  {
+    input: {
+      __compat: {
+        support: {
+          chrome: [
+            { version_added: '20' },
+            { version_added: '≤30' },
+            { version_added: '≤10' },
+            { version_added: '40' },
+          ],
+        },
+      },
+    },
+    output: {
+      __compat: {
+        support: {
+          chrome: [
+            { version_added: '40' },
+            { version_added: '≤30' },
+            { version_added: '20' },
+            { version_added: '≤10' },
+          ],
+        },
+      },
+    },
+  },
+  {
+    input: {
+      __compat: {
+        support: {
+          safari: [{ version_added: '10' }, { version_added: 'preview' }],
+        },
+      },
+    },
+    output: {
+      __compat: {
+        support: {
+          safari: [{ version_added: 'preview' }, { version_added: '10' }],
+        },
+      },
+    },
+  },
 ] as any;
 
-/**
- * Update the order of the statements
- *
- * @param {string} key The key of the object (make sure it's '__compat')
- * @param {CompatStatement} value The compat statement to update
- * @returns {CompatStatement} The updated compat statement
- */
-const orderStatements = (
-  key: string,
-  value: CompatStatement,
-): CompatStatement => {
+function orderStatements(key: string, value: CompatStatement): CompatStatement {
   if (key === '__compat') {
     for (const browser of Object.keys(value.support)) {
       const supportData = value.support[browser];
@@ -120,7 +152,7 @@ const orderStatements = (
     }
   }
   return value;
-};
+}
 
 describe('compare-statements script', () => {
   it('`compareStatements()` works correctly', () => {
