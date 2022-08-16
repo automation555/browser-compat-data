@@ -12,6 +12,17 @@ If it's helpful to understanding the rule, summarize the rationale. Definitely c
 
 -- END TEMPLATE -->
 
+
+## Adding subfeatures
+
+Subfeatures should be added for all methods, properties, tags, attributes, method arguments, and other specification entities, provided that they have an implementation in one or more of the supported browser engines.
+
+In addition, subfeatures should be added to indicate support for specific behaviours, such as support in workers, or that an interface is serializable.
+This ensures that every element that is actually in some browser has a statement of its compatibility, and may optionally also have an MDN documentation link and a specifation URL link. 
+
+For example, the `ImageData` interface was initially defined with `data`, `height` and `width` properties.
+The subfeatures for the `colorSpace` property, the constructor, and support for using the API in workers, were added after the first implementation of these in a browser.
+
 ## Constructors
 
 Name a constructor for an API feature the same as the parent feature (unless the constructor doesn't share the name of its parent feature) and have a description with text in the form of `<code>Name()</code> constructor`.
