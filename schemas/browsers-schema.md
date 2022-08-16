@@ -1,23 +1,24 @@
 # The browser JSON schema
 
-This document helps you to understand the structure of the browser (and JavaScript runtime) data in BCD, including the browser type, a display-friendly name, release data and more. Each browser is defined by a unique identifier (e.g. `firefox` or `chrome_android`).
+This document helps you to understand the structure of the [browser JSON](../browsers) files.
 
-Note: while NodeJS and Deno are JavaScript runtimes and not browsers, data for them is placed in `browsers`, and are included whenever we use the term "browsers".
+#### Browser identifiers
 
-## JSON structure
+The currently accepted browser identifiers are [defined in the compat-data schema](compat-data-schema.md#browser-identifiers). They are re-used for the browser data scheme. No other identifiers are allowed and the file names should also use the browser identifiers.
 
-Below is an example of the browser data:
+For example, for the browser identifier `firefox`, the file name is `firefox.json`.
+
+#### File structure
+
+The file `firefox.json` is structured like this:
 
 ```json
 {
   "browsers": {
     "firefox": {
       "name": "Firefox",
-      "type": "desktop",
       "preview_name": "Nightly",
       "pref_url": "about:config",
-      "accepts_flags": true,
-      "accepts_webextensions": true,
       "releases": {
         "1.5": {
           "release_date": "2005-11-29",
@@ -32,27 +33,17 @@ Below is an example of the browser data:
 }
 ```
 
-## Properties
+It contains an object with the property `browsers` which then contains an object with the browser identifier as the property name (`firefox`).
+
+Underneath, there is a `releases` object which will hold the various releases of a given browser by their release version number (`"1.5"`).
 
 ### `name`
 
 The `name` string is a required property which should use the browser brand name and avoid English words if possible, for example `"Firefox"`, `"Firefox Android"`, `"Safari"`, `"iOS Safari"`, etc.
 
-### `type`
-
-The `type` string is a required property which indicates the platform category the browser runs on. Valid options are `"desktop"`, `"mobile"`, `"server"` and `"xr"`.
-
-### `upstream`
-
-The `upstream` string is an optional property which indicates the upstream browser updates are derived from. For example, Firefox Android's upstream browser is Firefox (desktop), and Edge's upstream browser is Chrome. This is used for mirroring data between browsers. Valid options are any browser defined in the data.
-
 ### `accepts_flags`
 
-An optional boolean indicating whether the browser supports flags. If it is set to `false`, flag data will not be allowed for that browser.
-
-### `accepts_webextensions`
-
-An optional boolean indicating whether the browser supports web extensions. A `true` value will allow this browser to be defined in web extensions support.
+An optional boolean indicating whether the browser supports flags. This is a hint to data contributors and tools. A `true` value does not mean that there exists any flag data for the browser and a `false` value does not guarantee a lack of flag data for the browser.
 
 ### `pref_url`
 
@@ -62,9 +53,9 @@ An optional string containing the URL of the page where feature flags can be cha
 
 An optional string containing the name of the preview browser. For example, "Nightly" for Firefox, "Canary" for Chrome, and "TP" for Safari.
 
-### `releases`
+### Release objects
 
-The `releases` object contains data regarding the browsers' releases, using the version number as the index for each entry within. A release object contains the following properties:
+The release objects consist of the following properties:
 
 - A mandatory `status` property indicating where in the lifetime cycle this release is in. It's an enum accepting these values:
 
@@ -80,21 +71,22 @@ The `releases` object contains data regarding the browsers' releases, using the 
 
 - An optional `release_notes` property which points to release notes. It needs to be a valid URL.
 
-- An optional `engine` property which is the name of the browser's engine. This property is placed on the individual release as a browser may switch to a different engine (e.g. Microsoft Edge switched to Chrome as its base engine).
+- An optional `accepts_flags` boolean property indicating whether the release supports flags.
 
-- An optional `engine_version` property which is the version of the browser's engine. Depending on the browser, this may or may not differ from the browser version.
+  This is a hint to data contributors and tools. A `true` value does not mean that there exists any flag data for the release and a `false` value does not guarantee a lack of flag data for the release.
 
-## Exports
+- An optional `engine` property which is the name of the browser's engine.
+
+- An optional `engine_version` property which is the version of the browser's engine. This may or may not differ from the browser version.
+
+- An optional `safari_version` property used only for Safari iOS, which is the version of the corresponding Safari release. This is used to make the non-trivial mapping between the two available to scripts.
+
+### Exports
 
 This structure is exported for consumers of `@mdn/browser-compat-data`:
 
 ```js
-import bcd from '@mdn/browser-compat-data';
-bcd.browsers.firefox.releases['1.5'].status; // "retired"
-```
-
-```js
-> const bcd = require('@mdn/browser-compat-data');
-> bcd.browsers.firefox.releases['1.5'].status;
+> const compat = require('@mdn/browser-compat-data');
+> compat.browsers.firefox.releases['1.5'].status;
 // "retired"
 ```
