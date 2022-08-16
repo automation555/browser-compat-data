@@ -26,7 +26,6 @@
           "ie": {
             "version_added": "4"
           },
-          "oculus": "mirror",
           "opera": {
             "version_added": "8"
           },
@@ -38,9 +37,7 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": {
-            "version_added": "≤37"
-          }
+          "webview_android": "mirror"
         },
         "status": {
           "experimental": false,
@@ -58,7 +55,9 @@
               "version_added": "1"
             },
             "chrome_android": "mirror",
-            "edge": "mirror",
+            "edge": {
+              "version_added": "79"
+            },
             "firefox": {
               "version_added": "1"
             },
@@ -66,7 +65,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -100,7 +98,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -134,7 +131,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -148,6 +144,258 @@
             "experimental": false,
             "standard_track": false,
             "deprecated": true
+          }
+        }
+      },
+      "MSGestureChange_event": {
+        "__compat": {
+          "description": "<code>MSGestureChange</code> event",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/MSGestureChange_event",
+          "support": {
+            "chrome": {
+              "version_added": false
+            },
+            "chrome_android": "mirror",
+            "edge": {
+              "version_added": "12",
+              "version_removed": "79"
+            },
+            "firefox": {
+              "version_added": false
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": "10"
+            },
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": false,
+            "deprecated": false
+          }
+        }
+      },
+      "MSGestureEnd_event": {
+        "__compat": {
+          "description": "<code>MSGestureEnd</code> event",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/MSGestureEnd_event",
+          "support": {
+            "chrome": {
+              "version_added": false
+            },
+            "chrome_android": "mirror",
+            "edge": {
+              "version_added": "12",
+              "version_removed": "79"
+            },
+            "firefox": {
+              "version_added": false
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": "10"
+            },
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": false,
+            "deprecated": false
+          }
+        }
+      },
+      "MSGestureHold_event": {
+        "__compat": {
+          "description": "<code>MSGestureHold</code> event",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/MSGestureHold_event",
+          "support": {
+            "chrome": {
+              "version_added": false
+            },
+            "chrome_android": "mirror",
+            "edge": {
+              "version_added": "12",
+              "version_removed": "79"
+            },
+            "firefox": {
+              "version_added": false
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": "10"
+            },
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": false,
+            "deprecated": false
+          }
+        }
+      },
+      "MSGestureStart_event": {
+        "__compat": {
+          "description": "<code>MSGestureStart</code> event",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/MSGestureStart_event",
+          "support": {
+            "chrome": {
+              "version_added": false
+            },
+            "chrome_android": "mirror",
+            "edge": {
+              "version_added": "12",
+              "version_removed": "79"
+            },
+            "firefox": {
+              "version_added": false
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": "10"
+            },
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": false,
+            "deprecated": false
+          }
+        }
+      },
+      "MSGestureTap_event": {
+        "__compat": {
+          "description": "<code>MSGestureTap</code> event",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/MSGestureTap_event",
+          "support": {
+            "chrome": {
+              "version_added": false
+            },
+            "chrome_android": "mirror",
+            "edge": {
+              "version_added": "12",
+              "version_removed": "79"
+            },
+            "firefox": {
+              "version_added": false
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": "10"
+            },
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": false,
+            "deprecated": false
+          }
+        }
+      },
+      "MSInertiaStart_event": {
+        "__compat": {
+          "description": "<code>MSInertiaStart</code> event",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/MSInertiaStart_event",
+          "support": {
+            "chrome": {
+              "version_added": false
+            },
+            "chrome_android": "mirror",
+            "edge": {
+              "version_added": "12",
+              "version_removed": "79"
+            },
+            "firefox": {
+              "version_added": false
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": "10"
+            },
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": false,
+            "deprecated": false
+          }
+        }
+      },
+      "MSManipulationStateChanged_event": {
+        "__compat": {
+          "description": "<code>MSManipulationStateChanged</code> event",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/MSManipulationStateChanged_event",
+          "support": {
+            "chrome": {
+              "version_added": false
+            },
+            "chrome_android": "mirror",
+            "edge": {
+              "version_added": "12",
+              "version_removed": "79"
+            },
+            "firefox": {
+              "version_added": false
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": "11"
+            },
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": false,
+            "deprecated": false
           }
         }
       },
@@ -170,7 +418,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "39"
             },
@@ -206,7 +453,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -240,7 +486,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -248,7 +493,9 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": {
+              "version_added": "37"
+            }
           },
           "status": {
             "experimental": false,
@@ -275,7 +522,6 @@
               "ie": {
                 "version_added": false
               },
-              "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
@@ -308,8 +554,24 @@
                   }
                 ]
               },
-              "chrome_android": "mirror",
-              "edge": "mirror",
+              "chrome_android": {
+                "version_added": "79",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "#enable-experimental-web-platform-features"
+                  }
+                ]
+              },
+              "edge": {
+                "version_added": "79",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "#enable-experimental-web-platform-features"
+                  }
+                ]
+              },
               "firefox": [
                 {
                   "version_added": "80"
@@ -329,8 +591,15 @@
               "ie": {
                 "version_added": false
               },
-              "oculus": "mirror",
-              "opera": "mirror",
+              "opera": {
+                "version_added": "66",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "#enable-experimental-web-platform-features"
+                  }
+                ]
+              },
               "opera_android": "mirror",
               "safari": {
                 "version_added": false
@@ -363,7 +632,6 @@
               "ie": {
                 "version_added": false
               },
-              "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
@@ -409,7 +677,6 @@
               "ie": {
                 "version_added": false
               },
-              "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
@@ -442,8 +709,28 @@
                   }
                 ]
               },
-              "chrome_android": "mirror",
-              "edge": "mirror",
+              "chrome_android": {
+                "version_added": "81",
+                "partial_implementation": true,
+                "notes": "A valid animation object is returned but the targeted pseudoelement is not visually animated.",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "#enable-experimental-web-platform-features"
+                  }
+                ]
+              },
+              "edge": {
+                "version_added": "81",
+                "partial_implementation": true,
+                "notes": "A valid animation object is returned but the targeted pseudoelement is not visually animated.",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "#enable-experimental-web-platform-features"
+                  }
+                ]
+              },
               "firefox": {
                 "version_added": "75"
               },
@@ -453,8 +740,17 @@
               "ie": {
                 "version_added": false
               },
-              "oculus": "mirror",
-              "opera": "mirror",
+              "opera": {
+                "version_added": "68",
+                "partial_implementation": true,
+                "notes": "A valid animation object is returned but the targeted pseudoelement is not visually animated.",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "#enable-experimental-web-platform-features"
+                  }
+                ]
+              },
               "opera_android": "mirror",
               "safari": {
                 "version_added": false
@@ -468,1624 +764,6 @@
               "standard_track": true,
               "deprecated": false
             }
-          }
-        }
-      },
-      "animationcancel_event": {
-        "__compat": {
-          "description": "<code>animationcancel</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/animationcancel_event",
-          "spec_url": "https://drafts.csswg.org/css-animations/#eventdef-globaleventhandlers-animationcancel",
-          "support": {
-            "chrome": {
-              "version_added": "83",
-              "partial_implementation": true,
-              "notes": "The <code>onanimationcancel</code> event handler property is not supported. To listen to this event, use <code>element.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": "54"
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": [
-              {
-                "version_added": "13.1"
-              },
-              {
-                "version_added": "12",
-                "version_removed": "13.1",
-                "partial_implementation": true,
-                "notes": "Although the <code>onanimationcancel</code> event handler property is supported, the <code>animationcancel</code> event is never fired."
-              }
-            ],
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "animationend_event": {
-        "__compat": {
-          "description": "<code>animationend</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/animationend_event",
-          "spec_url": "https://drafts.csswg.org/css-animations/#eventdef-globaleventhandlers-animationend",
-          "support": {
-            "chrome": [
-              {
-                "version_added": "79"
-              },
-              {
-                "version_added": "81",
-                "prefix": "webkit"
-              },
-              {
-                "version_added": "43",
-                "version_removed": "79",
-                "partial_implementation": true,
-                "notes": "The <code>onanimationend</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationend', function() {});</code>."
-              }
-            ],
-            "chrome_android": "mirror",
-            "edge": [
-              {
-                "version_added": "18"
-              },
-              {
-                "version_added": "81",
-                "prefix": "webkit"
-              },
-              {
-                "version_added": "12",
-                "version_removed": "18",
-                "partial_implementation": true,
-                "notes": "The <code>onanimationend</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationend', function() {});</code>."
-              }
-            ],
-            "firefox": [
-              {
-                "version_added": "51"
-              },
-              {
-                "version_added": "5",
-                "version_removed": "51",
-                "partial_implementation": true,
-                "notes": "The <code>onanimationend</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationend', function() {});</code>."
-              }
-            ],
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": "10",
-              "partial_implementation": true,
-              "notes": "The <code>onanimationend</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationend', function() {});</code>."
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "9"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "animationiteration_event": {
-        "__compat": {
-          "description": "<code>animationiteration</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/animationiteration_event",
-          "spec_url": "https://drafts.csswg.org/css-animations/#eventdef-globaleventhandlers-animationiteration",
-          "support": {
-            "chrome": [
-              {
-                "version_added": "79"
-              },
-              {
-                "version_added": "81",
-                "prefix": "webkit"
-              },
-              {
-                "version_added": "43",
-                "version_removed": "79",
-                "partial_implementation": true,
-                "notes": "The <code>onanimationiteration</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationiteration', function() {});</code>."
-              }
-            ],
-            "chrome_android": "mirror",
-            "edge": [
-              {
-                "version_added": "18"
-              },
-              {
-                "version_added": "81",
-                "prefix": "webkit"
-              },
-              {
-                "version_added": "12",
-                "version_removed": "18",
-                "partial_implementation": true,
-                "notes": "The <code>onanimationiteration</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationiteration', function() {});</code>."
-              }
-            ],
-            "firefox": [
-              {
-                "version_added": "51"
-              },
-              {
-                "version_added": "5",
-                "version_removed": "51",
-                "partial_implementation": true,
-                "notes": "The <code>onanimationiteration</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationiteration', function() {});</code>."
-              }
-            ],
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": "10",
-              "partial_implementation": true,
-              "notes": "The <code>onanimationiteration</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationiteration', function() {});</code>."
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "9"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "animationstart_event": {
-        "__compat": {
-          "description": "<code>animationstart</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/animationstart_event",
-          "spec_url": "https://drafts.csswg.org/css-animations/#eventdef-globaleventhandlers-animationstart",
-          "support": {
-            "chrome": [
-              {
-                "version_added": "79"
-              },
-              {
-                "version_added": "81",
-                "prefix": "webkit"
-              },
-              {
-                "version_added": "43",
-                "version_removed": "79",
-                "partial_implementation": true,
-                "notes": "The <code>onanimationstart</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationstart', function() {});</code>."
-              }
-            ],
-            "chrome_android": "mirror",
-            "edge": [
-              {
-                "version_added": "18"
-              },
-              {
-                "version_added": "81",
-                "prefix": "webkit"
-              },
-              {
-                "version_added": "12",
-                "version_removed": "18",
-                "partial_implementation": true,
-                "notes": "The <code>onanimationstart</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationstart', function() {});</code>."
-              }
-            ],
-            "firefox": [
-              {
-                "version_added": "51"
-              },
-              {
-                "version_added": "5",
-                "version_removed": "51",
-                "partial_implementation": true,
-                "notes": "The <code>onanimationstart</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationstart', function() {});</code>."
-              }
-            ],
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": "10",
-              "partial_implementation": true,
-              "notes": "The <code>onanimationstart</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationstart', function() {});</code>."
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "9"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "append": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/append",
-          "spec_url": "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-append①",
-          "support": {
-            "chrome": {
-              "version_added": "54"
-            },
-            "chrome_android": "mirror",
-            "edge": {
-              "version_added": "17"
-            },
-            "firefox": {
-              "version_added": "49"
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "10"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaAtomic": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaAtomic",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariaatomic",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaAutoComplete": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaAutoComplete",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariaautocomplete",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaBusy": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaBusy",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariabusy",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaChecked": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaChecked",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariachecked",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaColCount": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaColCount",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariacolcount",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaColIndex": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaColIndex",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariacolindex",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaColSpan": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaColSpan",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariacolspan",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaCurrent": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaCurrent",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariacurrent",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaDescription": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaDescription",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariadescription",
-          "support": {
-            "chrome": {
-              "version_added": "83"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": false
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaDisabled": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaDisabled",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariadisabled",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaExpanded": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaExpanded",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariaexpanded",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaHasPopup": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaHasPopup",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariahaspopup",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaHidden": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaHidden",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariahidden",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaInvalid": {
-        "__compat": {
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariainvalid",
-          "support": {
-            "chrome": {
-              "version_added": "102"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaKeyShortcuts": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaKeyShortcuts",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariakeyshortcuts",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaLabel": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaLabel",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-arialabel",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaLevel": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaLevel",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-arialevel",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaLive": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaLive",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-arialive",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaModal": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaModal",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariamodal",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaMultiLine": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaMultiLine",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariamultiline",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaMultiSelectable": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaMultiSelectable",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariamultiselectable",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaOrientation": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaOrientation",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariaorientation",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaPlaceholder": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaPlaceholder",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariaplaceholder",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaPosInSet": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaPosInSet",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariaposinset",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaPressed": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaPressed",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariapressed",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaReadOnly": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaReadOnly",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariareadonly",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaRelevant": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaRelevant",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": false,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaRequired": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaRequired",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariarequired",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaRoleDescription": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaRoleDescription",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariaorientation",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaRowCount": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaRowCount",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariarowcount",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaRowIndex": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaRowIndex",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariarowindex",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaRowSpan": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaRowSpan",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariarowspan",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaSelected": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaSelected",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariavaluemax",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaSetSize": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaSetSize",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariasetsize",
-          "support": {
-            "chrome": {
-              "version_added": "84"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaSort": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaSort",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariasort",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaValueMax": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaValueMax",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariavaluemax",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaValueMin": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaValueMin",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariavaluemin",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaValueNow": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaValueNow",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariavaluenow",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "ariaValueText": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/ariaValueText",
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-ariavaluetext",
-          "support": {
-            "chrome": {
-              "version_added": "81"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
           }
         }
       },
@@ -2106,7 +784,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -2140,7 +817,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -2173,7 +849,6 @@
               "ie": {
                 "version_added": false
               },
-              "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
@@ -2210,7 +885,6 @@
             "ie": {
               "version_added": "5.5"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "8"
             },
@@ -2235,10 +909,7 @@
         "__compat": {
           "description": "<code>auxclick</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/auxclick_event",
-          "spec_url": [
-            "https://w3c.github.io/uievents/#event-type-auxclick",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onauxclick"
-          ],
+          "spec_url": "https://w3c.github.io/uievents/#event-type-auxclick",
           "support": {
             "chrome": {
               "version_added": "55"
@@ -2255,7 +926,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -2291,7 +961,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "39"
             },
@@ -2327,7 +996,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -2348,10 +1016,7 @@
         "__compat": {
           "description": "<code>blur</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/blur_event",
-          "spec_url": [
-            "https://w3c.github.io/uievents/#event-type-blur",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onblur"
-          ],
+          "spec_url": "https://w3c.github.io/uievents/#event-type-blur",
           "support": {
             "chrome": {
               "version_added": "1"
@@ -2374,7 +1039,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "11.6"
             },
@@ -2385,99 +1049,6 @@
               "version_added": "3.1"
             },
             "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "childElementCount": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/childElementCount",
-          "spec_url": "https://dom.spec.whatwg.org/#dom-parentnode-childelementcount",
-          "support": {
-            "chrome": {
-              "version_added": "1"
-            },
-            "chrome_android": "mirror",
-            "edge": {
-              "version_added": "12"
-            },
-            "firefox": {
-              "version_added": "3.5"
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": "9"
-            },
-            "oculus": "mirror",
-            "opera": {
-              "version_added": "10"
-            },
-            "opera_android": {
-              "version_added": "10.1"
-            },
-            "safari": {
-              "version_added": "4"
-            },
-            "safari_ios": {
-              "version_added": "3"
-            },
-            "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "children": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/children",
-          "spec_url": "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-children①",
-          "support": {
-            "chrome": {
-              "version_added": "1"
-            },
-            "chrome_android": "mirror",
-            "edge": {
-              "version_added": "12"
-            },
-            "firefox": {
-              "version_added": "3.5"
-            },
-            "firefox_android": "mirror",
-            "ie": [
-              {
-                "version_added": "9"
-              },
-              {
-                "version_added": "6",
-                "version_removed": "9",
-                "notes": "Also includes non-standard <code>HTMLCommentElement</code> nodes."
-              }
-            ],
-            "oculus": "mirror",
-            "opera": {
-              "version_added": "10"
-            },
-            "opera_android": {
-              "version_added": "10.1"
-            },
-            "safari": {
-              "version_added": "4"
-            },
-            "safari_ios": {
-              "version_added": "3"
-            },
             "samsunginternet_android": "mirror",
             "webview_android": "mirror"
           },
@@ -2525,7 +1096,6 @@
               "notes": "Not supported for SVG elements.",
               "partial_implementation": true
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "11.5"
             },
@@ -2543,7 +1113,17 @@
                 "partial_implementation": true
               }
             ],
-            "safari_ios": "mirror",
+            "safari_ios": [
+              {
+                "version_added": "7"
+              },
+              {
+                "version_added": "6",
+                "version_removed": "7",
+                "notes": "Not supported for SVG elements.",
+                "partial_implementation": true
+              }
+            ],
             "samsunginternet_android": "mirror",
             "webview_android": [
               {
@@ -2591,7 +1171,6 @@
             "ie": {
               "version_added": "5"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "8"
             },
@@ -2616,10 +1195,7 @@
         "__compat": {
           "description": "<code>click</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/click_event",
-          "spec_url": [
-            "https://w3c.github.io/uievents/#event-type-click",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onclick"
-          ],
+          "spec_url": "https://w3c.github.io/uievents/#event-type-click",
           "support": {
             "chrome": {
               "version_added": "1"
@@ -2638,7 +1214,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "11.6"
             },
@@ -2680,7 +1255,6 @@
             "ie": {
               "version_added": "5"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "8"
             },
@@ -2722,7 +1296,6 @@
             "ie": {
               "version_added": "5"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "8"
             },
@@ -2764,7 +1337,6 @@
             "ie": {
               "version_added": "5"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "8"
             },
@@ -2806,7 +1378,6 @@
             "ie": {
               "version_added": "5"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "8"
             },
@@ -2848,7 +1419,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -2887,7 +1457,6 @@
             "ie": {
               "version_added": "11"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤15"
             },
@@ -2932,7 +1501,6 @@
             "ie": {
               "version_added": "11"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤15"
             },
@@ -2977,7 +1545,6 @@
             "ie": {
               "version_added": "11"
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -3015,7 +1582,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -3052,7 +1618,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "10.5"
             },
@@ -3080,10 +1645,7 @@
         "__compat": {
           "description": "<code>copy</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/copy_event",
-          "spec_url": [
-            "https://w3c.github.io/clipboard-apis/#clipboard-event-copy",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncopy"
-          ],
+          "spec_url": "https://w3c.github.io/clipboard-apis/#clipboard-event-copy",
           "support": {
             "chrome": {
               "version_added": "1"
@@ -3100,13 +1662,8 @@
               "version_added": "9",
               "notes": "Before Internet Explorer 9, this event is not supported via <code>addEventListener</code>; however, the event handler is supported since IE 5.5. The event can be listened to via <code>element.oncopy</code>."
             },
-            "oculus": "mirror",
-            "opera": {
-              "version_added": "≤12.1"
-            },
-            "opera_android": {
-              "version_added": "≤12.1"
-            },
+            "opera": "mirror",
+            "opera_android": "mirror",
             "safari": {
               "version_added": "3"
             },
@@ -3130,7 +1687,6 @@
             "chrome": [
               {
                 "version_added": "35",
-                "version_removed": "80",
                 "notes": "In Chrome 45, the ability to have multiple shadow roots was deprecated."
               },
               {
@@ -3141,8 +1697,7 @@
             ],
             "chrome_android": "mirror",
             "edge": {
-              "version_added": "79",
-              "version_removed": "80"
+              "version_added": "79"
             },
             "firefox": {
               "version_added": false
@@ -3151,7 +1706,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -3159,7 +1713,17 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": [
+              {
+                "version_added": "37",
+                "notes": "In version 45, the ability to have multiple shadow roots was deprecated."
+              },
+              {
+                "version_added": "4.4",
+                "version_removed": "37",
+                "prefix": "webkit"
+              }
+            ]
           },
           "status": {
             "experimental": false,
@@ -3172,10 +1736,7 @@
         "__compat": {
           "description": "<code>cut</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/cut_event",
-          "spec_url": [
-            "https://w3c.github.io/clipboard-apis/#clipboard-event-cut",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncut"
-          ],
+          "spec_url": "https://w3c.github.io/clipboard-apis/#clipboard-event-cut",
           "support": {
             "chrome": {
               "version_added": "1"
@@ -3192,13 +1753,8 @@
               "version_added": "9",
               "notes": "Before Internet Explorer 9, this event is not supported via <code>addEventListener</code>; however, the event handler is supported since IE 5.5. The event can be listened to via <code>element.oncopy</code>."
             },
-            "oculus": "mirror",
-            "opera": {
-              "version_added": "≤12.1"
-            },
-            "opera_android": {
-              "version_added": "≤12.1"
-            },
+            "opera": "mirror",
+            "opera_android": "mirror",
             "safari": {
               "version_added": "3"
             },
@@ -3219,10 +1775,7 @@
         "__compat": {
           "description": "<code>dblclick</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/dblclick_event",
-          "spec_url": [
-            "https://w3c.github.io/uievents/#event-type-dblclick",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-ondblclick"
-          ],
+          "spec_url": "https://w3c.github.io/uievents/#event-type-dblclick",
           "support": {
             "chrome": {
               "version_added": "1"
@@ -3243,7 +1796,6 @@
             "ie": {
               "version_added": "8"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "11.6"
             },
@@ -3282,7 +1834,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -3319,7 +1870,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -3340,58 +1890,11 @@
           }
         }
       },
-      "firstElementChild": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/firstElementChild",
-          "spec_url": "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-firstelementchild①",
-          "support": {
-            "chrome": {
-              "version_added": "1"
-            },
-            "chrome_android": "mirror",
-            "edge": {
-              "version_added": "12"
-            },
-            "firefox": {
-              "version_added": "3.5"
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": "9"
-            },
-            "oculus": "mirror",
-            "opera": {
-              "version_added": "10"
-            },
-            "opera_android": {
-              "version_added": "10.1"
-            },
-            "safari": {
-              "version_added": "4"
-            },
-            "safari_ios": {
-              "version_added": "3"
-            },
-            "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
       "focus_event": {
         "__compat": {
           "description": "<code>focus</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/focus_event",
-          "spec_url": [
-            "https://w3c.github.io/uievents/#event-type-focus",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onfocus"
-          ],
+          "spec_url": "https://w3c.github.io/uievents/#event-type-focus",
           "support": {
             "chrome": {
               "version_added": "1"
@@ -3414,7 +1917,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "11.6"
             },
@@ -3455,7 +1957,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "11.6"
             },
@@ -3498,7 +1999,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "11.6"
             },
@@ -3563,7 +2063,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": [
               {
                 "version_added": "58"
@@ -3660,7 +2159,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": [
               {
                 "version_added": "58"
@@ -3732,7 +2230,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -3768,7 +2265,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -3804,7 +2300,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -3840,7 +2335,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -3876,7 +2370,6 @@
             "ie": {
               "version_added": "5"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "8"
             },
@@ -3916,7 +2409,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -3952,7 +2444,6 @@
             "ie": {
               "version_added": "6"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -3992,7 +2483,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -4033,7 +2523,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -4073,7 +2562,6 @@
             "ie": {
               "version_added": "4"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "9.5"
             },
@@ -4099,46 +2587,6 @@
           }
         }
       },
-      "getBoxQuads": {
-        "__compat": {
-          "spec_url": "https://drafts.csswg.org/cssom-view/#dom-geometryutils-getboxquads",
-          "support": {
-            "chrome": {
-              "version_added": false
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": "31",
-              "flags": [
-                {
-                  "type": "preference",
-                  "name": "layout.css.getBoxQuads.enabled",
-                  "value_to_set": "true"
-                }
-              ]
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": false
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": true,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
       "getClientRects": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/getClientRects",
@@ -4158,7 +2606,6 @@
             "ie": {
               "version_added": "5"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "9.5"
             },
@@ -4213,7 +2660,6 @@
               "partial_implementation": true,
               "notes": "Only supported for <a href='https://developer.mozilla.org/docs/Web/API/HTMLElement'><code>HTMLElement</code></a>, not all <code>Element</code> objects, such as <a href='https://developer.mozilla.org/docs/Web/API/SVGElement'><code>SVGElement</code></a>."
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "9.5"
             },
@@ -4221,7 +2667,7 @@
               "version_added": "10.1"
             },
             "safari": {
-              "version_added": "6"
+              "version_added": "3.1"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
@@ -4255,7 +2701,6 @@
             "ie": {
               "version_added": "5.5"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "8",
               "notes": "Initially, this method was returning a <code>NodeList</code>; it was then changed to reflect the spec change."
@@ -4295,7 +2740,6 @@
               "ie": {
                 "version_added": "6"
               },
-              "oculus": "mirror",
               "opera": {
                 "version_added": "≤15"
               },
@@ -4344,7 +2788,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1",
               "notes": "Initially, this method was returning a <code>NodeList</code>; it was then changed to reflect the spec change."
@@ -4385,7 +2828,6 @@
               "ie": {
                 "version_added": "9"
               },
-              "oculus": "mirror",
               "opera": {
                 "version_added": "≤15"
               },
@@ -4404,48 +2846,6 @@
               "standard_track": true,
               "deprecated": false
             }
-          }
-        }
-      },
-      "gotpointercapture_event": {
-        "__compat": {
-          "description": "<code>gotpointercapture</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/gotpointercapture_event",
-          "spec_url": [
-            "https://w3c.github.io/pointerevents/#the-gotpointercapture-event",
-            "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-ongotpointercapture"
-          ],
-          "support": {
-            "chrome": {
-              "version_added": "57"
-            },
-            "chrome_android": "mirror",
-            "edge": {
-              "version_added": "17"
-            },
-            "firefox": {
-              "version_added": "59"
-            },
-            "firefox_android": {
-              "version_added": "79"
-            },
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "13"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
           }
         }
       },
@@ -4468,7 +2868,6 @@
             "ie": {
               "version_added": "8"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "8"
             },
@@ -4508,7 +2907,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -4549,7 +2947,6 @@
             "ie": {
               "version_added": "8"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -4589,7 +2986,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -4633,7 +3029,6 @@
             "ie": {
               "version_added": "5"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -4660,7 +3055,8 @@
           "spec_url": "https://w3c.github.io/DOM-Parsing/#dom-innerhtml-innerhtml",
           "support": {
             "chrome": {
-              "version_added": "1"
+              "version_added": "32",
+              "notes": "This API was previously available on the <code>Node</code> API."
             },
             "chrome_android": "mirror",
             "edge": {
@@ -4673,7 +3069,6 @@
             "ie": {
               "version_added": "4"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "8"
             },
@@ -4681,13 +3076,12 @@
               "version_added": "10.1"
             },
             "safari": {
-              "version_added": "1"
+              "version_added": "9",
+              "notes": "This API was previously available on the <code>Node</code> API."
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "1"
-            }
+            "webview_android": "mirror"
           },
           "status": {
             "experimental": false,
@@ -4725,7 +3119,6 @@
               "partial_implementation": true,
               "notes": "Only supported for <a href='https://developer.mozilla.org/docs/Web/API/HTMLElement'><code>HTMLElement</code></a>, not all <code>Element</code> objects, such as <a href='https://developer.mozilla.org/docs/Web/API/SVGElement'><code>SVGElement</code></a>."
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "8"
             },
@@ -4780,7 +3173,6 @@
                 "Only supported for <a href='https://developer.mozilla.org/docs/Web/API/HTMLElement'><code>HTMLElement</code></a>, not all <code>Element</code> objects, such as <a href='https://developer.mozilla.org/docs/Web/API/SVGElement'><code>SVGElement</code></a>."
               ]
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "8"
             },
@@ -4834,7 +3226,6 @@
               "partial_implementation": true,
               "notes": "Only supported for <a href='https://developer.mozilla.org/docs/Web/API/HTMLElement'><code>HTMLElement</code></a>, not all <code>Element</code> objects, such as <a href='https://developer.mozilla.org/docs/Web/API/SVGElement'><code>SVGElement</code></a>."
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -4863,10 +3254,7 @@
         "__compat": {
           "description": "<code>keydown</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/keydown_event",
-          "spec_url": [
-            "https://w3c.github.io/uievents/#event-type-keydown",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onkeydown"
-          ],
+          "spec_url": "https://w3c.github.io/uievents/#event-type-keydown",
           "support": {
             "chrome": {
               "version_added": "1"
@@ -4882,7 +3270,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -4907,10 +3294,7 @@
         "__compat": {
           "description": "<code>keypress</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/keypress_event",
-          "spec_url": [
-            "https://w3c.github.io/uievents/#event-type-keypress",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onkeypress"
-          ],
+          "spec_url": "https://w3c.github.io/uievents/#event-type-keypress",
           "support": {
             "chrome": {
               "version_added": "1",
@@ -4928,7 +3312,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1",
               "notes": "Opera does not fire the <code>keypress</code> event for <a href='https://crbug.com/13891#c50'>known keyboard shortcuts</a>. Which keyboard shortcuts are known depends on the user's system. Use the <code>keydown</code> event to implement keyboard shortcuts."
@@ -4958,10 +3341,7 @@
         "__compat": {
           "description": "<code>keyup</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/keyup_event",
-          "spec_url": [
-            "https://w3c.github.io/uievents/#event-type-keyup",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onkeyup"
-          ],
+          "spec_url": "https://w3c.github.io/uievents/#event-type-keyup",
           "support": {
             "chrome": {
               "version_added": "1"
@@ -4977,7 +3357,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -4990,50 +3369,6 @@
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
             "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "lastElementChild": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/lastElementChild",
-          "spec_url": "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-lastelementchild①",
-          "support": {
-            "chrome": {
-              "version_added": "1"
-            },
-            "chrome_android": "mirror",
-            "edge": {
-              "version_added": "12"
-            },
-            "firefox": {
-              "version_added": "3.5"
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": "9"
-            },
-            "oculus": "mirror",
-            "opera": {
-              "version_added": "10"
-            },
-            "opera_android": {
-              "version_added": "10.1"
-            },
-            "safari": {
-              "version_added": "4"
-            },
-            "safari_ios": {
-              "version_added": "3"
-            },
-            "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
           },
           "status": {
             "experimental": false,
@@ -5061,7 +3396,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -5070,48 +3404,6 @@
             },
             "safari": {
               "version_added": "1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "lostpointercapture_event": {
-        "__compat": {
-          "description": "<code>lostpointercapture</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/lostpointercapture_event",
-          "spec_url": [
-            "https://w3c.github.io/pointerevents/#the-lostpointercapture-event",
-            "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onlostpointercapture"
-          ],
-          "support": {
-            "chrome": {
-              "version_added": "57"
-            },
-            "chrome_android": "mirror",
-            "edge": {
-              "version_added": "17"
-            },
-            "firefox": {
-              "version_added": "59"
-            },
-            "firefox_android": {
-              "version_added": "79"
-            },
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "13"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
@@ -5149,7 +3441,6 @@
               },
               {
                 "version_added": "12",
-                "version_removed": "79",
                 "alternative_name": "msMatchesSelector"
               }
             ],
@@ -5188,7 +3479,6 @@
               "version_added": "9",
               "alternative_name": "msMatchesSelector"
             },
-            "oculus": "mirror",
             "opera": [
               {
                 "version_added": "21"
@@ -5219,7 +3509,7 @@
             ],
             "safari": [
               {
-                "version_added": "8"
+                "version_added": "7"
               },
               {
                 "version_added": "5",
@@ -5249,10 +3539,7 @@
         "__compat": {
           "description": "<code>mousedown</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/mousedown_event",
-          "spec_url": [
-            "https://w3c.github.io/uievents/#event-type-mousedown",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onmousedown"
-          ],
+          "spec_url": "https://w3c.github.io/uievents/#event-type-mousedown",
           "support": {
             "chrome": {
               "version_added": "2"
@@ -5268,7 +3555,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "11.6"
             },
@@ -5295,10 +3581,7 @@
         "__compat": {
           "description": "<code>mouseenter</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/mouseenter_event",
-          "spec_url": [
-            "https://w3c.github.io/uievents/#event-type-mouseenter",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onmouseenter"
-          ],
+          "spec_url": "https://w3c.github.io/uievents/#event-type-mouseenter",
           "support": {
             "chrome": {
               "version_added": "30"
@@ -5314,13 +3597,14 @@
             "ie": {
               "version_added": "5.5"
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
               "version_added": "7"
             },
-            "safari_ios": "mirror",
+            "safari_ios": {
+              "version_added": "7"
+            },
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
@@ -5337,10 +3621,7 @@
         "__compat": {
           "description": "<code>mouseleave</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/mouseleave_event",
-          "spec_url": [
-            "https://w3c.github.io/uievents/#event-type-mouseleave",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onmouseleave"
-          ],
+          "spec_url": "https://w3c.github.io/uievents/#event-type-mouseleave",
           "support": {
             "chrome": {
               "version_added": "30"
@@ -5356,13 +3637,14 @@
             "ie": {
               "version_added": "5.5"
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
               "version_added": "7"
             },
-            "safari_ios": "mirror",
+            "safari_ios": {
+              "version_added": "7"
+            },
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
@@ -5379,10 +3661,7 @@
         "__compat": {
           "description": "<code>mousemove</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/mousemove_event",
-          "spec_url": [
-            "https://w3c.github.io/uievents/#event-type-mousemove",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onmousemove"
-          ],
+          "spec_url": "https://w3c.github.io/uievents/#event-type-mousemove",
           "support": {
             "chrome": {
               "version_added": "2"
@@ -5398,7 +3677,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "11.6"
             },
@@ -5425,10 +3703,7 @@
         "__compat": {
           "description": "<code>mouseout</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/mouseout_event",
-          "spec_url": [
-            "https://w3c.github.io/uievents/#event-type-mouseout",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onmouseout"
-          ],
+          "spec_url": "https://w3c.github.io/uievents/#event-type-mouseout",
           "support": {
             "chrome": {
               "version_added": "1"
@@ -5444,7 +3719,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -5471,10 +3745,7 @@
         "__compat": {
           "description": "<code>mouseover</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/mouseover_event",
-          "spec_url": [
-            "https://w3c.github.io/uievents/#event-type-mouseover",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onmouseover"
-          ],
+          "spec_url": "https://w3c.github.io/uievents/#event-type-mouseover",
           "support": {
             "chrome": {
               "version_added": "2"
@@ -5490,7 +3761,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "9.5"
             },
@@ -5517,10 +3787,7 @@
         "__compat": {
           "description": "<code>mouseup</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/mouseup_event",
-          "spec_url": [
-            "https://w3c.github.io/uievents/#event-type-mouseup",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onmouseup"
-          ],
+          "spec_url": "https://w3c.github.io/uievents/#event-type-mouseup",
           "support": {
             "chrome": {
               "version_added": "2"
@@ -5536,7 +3803,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "11.6"
             },
@@ -5578,7 +3844,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤15"
             },
@@ -5621,7 +3886,6 @@
             "ie": {
               "version_added": "11"
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -5657,7 +3921,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -5697,7 +3960,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "10"
             },
@@ -5739,7 +4001,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -5762,7 +4023,8 @@
           "spec_url": "https://w3c.github.io/DOM-Parsing/#dom-element-outerhtml",
           "support": {
             "chrome": {
-              "version_added": "1"
+              "version_added": "32",
+              "notes": "This API was previously available on the <code>Node</code> API."
             },
             "chrome_android": "mirror",
             "edge": {
@@ -5775,7 +4037,6 @@
             "ie": {
               "version_added": "4"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "8"
             },
@@ -5783,12 +4044,13 @@
               "version_added": "10.1"
             },
             "safari": {
-              "version_added": "1.3"
+              "version_added": "9"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
             "webview_android": {
-              "version_added": "1"
+              "version_added": "4.4",
+              "notes": "This API was previously available on the <code>Node</code> API."
             }
           },
           "status": {
@@ -5827,7 +4089,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -5848,10 +4109,7 @@
         "__compat": {
           "description": "<code>paste</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/paste_event",
-          "spec_url": [
-            "https://w3c.github.io/clipboard-apis/#clipboard-event-paste",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onpaste"
-          ],
+          "spec_url": "https://w3c.github.io/clipboard-apis/#clipboard-event-paste",
           "support": {
             "chrome": {
               "version_added": "1"
@@ -5871,13 +4129,8 @@
                 "Before Internet Explorer 9, this event is not supported via <code>addEventListener</code>; however, the event handler is supported since IE 5.5. The event can be listened to via <code>element.oncopy</code>."
               ]
             },
-            "oculus": "mirror",
-            "opera": {
-              "version_added": "≤12.1"
-            },
-            "opera_android": {
-              "version_added": "≤12.1"
-            },
+            "opera": "mirror",
+            "opera_android": "mirror",
             "safari": {
               "version_added": "3"
             },
@@ -5888,484 +4141,6 @@
             "webview_android": {
               "version_added": "≤37"
             }
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "pointercancel_event": {
-        "__compat": {
-          "description": "<code>pointercancel</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/pointercancel_event",
-          "spec_url": [
-            "https://w3c.github.io/pointerevents/#the-pointercancel-event",
-            "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointercancel"
-          ],
-          "support": {
-            "chrome": {
-              "version_added": "55"
-            },
-            "chrome_android": "mirror",
-            "edge": [
-              {
-                "version_added": "12"
-              },
-              {
-                "version_added": "12",
-                "version_removed": "79",
-                "alternative_name": "mspointercancel"
-              }
-            ],
-            "firefox": {
-              "version_added": "59"
-            },
-            "firefox_android": {
-              "version_added": "79"
-            },
-            "ie": [
-              {
-                "version_added": "11"
-              },
-              {
-                "version_added": "10",
-                "alternative_name": "mspointercancel"
-              }
-            ],
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "13"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "pointerdown_event": {
-        "__compat": {
-          "description": "<code>pointerdown</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/pointerdown_event",
-          "spec_url": [
-            "https://w3c.github.io/pointerevents/#the-pointerdown-event",
-            "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerdown"
-          ],
-          "support": {
-            "chrome": {
-              "version_added": "55"
-            },
-            "chrome_android": "mirror",
-            "edge": [
-              {
-                "version_added": "12"
-              },
-              {
-                "version_added": "12",
-                "version_removed": "79",
-                "alternative_name": "mspointerdown"
-              }
-            ],
-            "firefox": {
-              "version_added": "59"
-            },
-            "firefox_android": {
-              "version_added": "79"
-            },
-            "ie": [
-              {
-                "version_added": "11"
-              },
-              {
-                "version_added": "10",
-                "alternative_name": "mspointerdown"
-              }
-            ],
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "13"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "pointerenter_event": {
-        "__compat": {
-          "description": "<code>pointerenter</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/pointerenter_event",
-          "spec_url": [
-            "https://w3c.github.io/pointerevents/#the-pointerenter-event",
-            "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerenter"
-          ],
-          "support": {
-            "chrome": {
-              "version_added": "55"
-            },
-            "chrome_android": "mirror",
-            "edge": [
-              {
-                "version_added": "12"
-              },
-              {
-                "version_added": "12",
-                "version_removed": "79",
-                "alternative_name": "mspointerenter"
-              }
-            ],
-            "firefox": {
-              "version_added": "59"
-            },
-            "firefox_android": {
-              "version_added": "79"
-            },
-            "ie": [
-              {
-                "version_added": "11"
-              },
-              {
-                "version_added": "10",
-                "alternative_name": "mspointerenter"
-              }
-            ],
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "13"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "pointerleave_event": {
-        "__compat": {
-          "description": "<code>pointerleave</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/pointerleave_event",
-          "spec_url": [
-            "https://w3c.github.io/pointerevents/#the-pointerleave-event",
-            "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerleave"
-          ],
-          "support": {
-            "chrome": {
-              "version_added": "55"
-            },
-            "chrome_android": "mirror",
-            "edge": [
-              {
-                "version_added": "12"
-              },
-              {
-                "version_added": "12",
-                "version_removed": "79",
-                "alternative_name": "mspointerleave"
-              }
-            ],
-            "firefox": {
-              "version_added": "59"
-            },
-            "firefox_android": {
-              "version_added": "79"
-            },
-            "ie": [
-              {
-                "version_added": "11"
-              },
-              {
-                "version_added": "10",
-                "alternative_name": "mspointerleave"
-              }
-            ],
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "13"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "pointermove_event": {
-        "__compat": {
-          "description": "<code>pointermove</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/pointermove_event",
-          "spec_url": [
-            "https://w3c.github.io/pointerevents/#the-pointermove-event",
-            "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointermove"
-          ],
-          "support": {
-            "chrome": {
-              "version_added": "55"
-            },
-            "chrome_android": "mirror",
-            "edge": [
-              {
-                "version_added": "12"
-              },
-              {
-                "version_added": "12",
-                "version_removed": "79",
-                "alternative_name": "mspointermove"
-              }
-            ],
-            "firefox": {
-              "version_added": "59"
-            },
-            "firefox_android": {
-              "version_added": "79"
-            },
-            "ie": [
-              {
-                "version_added": "11"
-              },
-              {
-                "version_added": "10",
-                "alternative_name": "mspointermove"
-              }
-            ],
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "13"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "pointerout_event": {
-        "__compat": {
-          "description": "<code>pointerout</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/pointerout_event",
-          "spec_url": [
-            "https://w3c.github.io/pointerevents/#the-pointerout-event",
-            "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerout"
-          ],
-          "support": {
-            "chrome": {
-              "version_added": "55"
-            },
-            "chrome_android": "mirror",
-            "edge": [
-              {
-                "version_added": "12"
-              },
-              {
-                "version_added": "12",
-                "version_removed": "79",
-                "alternative_name": "mspointerout"
-              }
-            ],
-            "firefox": {
-              "version_added": "59"
-            },
-            "firefox_android": {
-              "version_added": "79"
-            },
-            "ie": [
-              {
-                "version_added": "11"
-              },
-              {
-                "version_added": "10",
-                "alternative_name": "mspointerout"
-              }
-            ],
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "13"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "pointerover_event": {
-        "__compat": {
-          "description": "<code>pointerover</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/pointerover_event",
-          "spec_url": [
-            "https://w3c.github.io/pointerevents/#the-pointerover-event",
-            "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerover"
-          ],
-          "support": {
-            "chrome": {
-              "version_added": "55"
-            },
-            "chrome_android": "mirror",
-            "edge": [
-              {
-                "version_added": "12"
-              },
-              {
-                "version_added": "12",
-                "version_removed": "79",
-                "alternative_name": "mspointerover"
-              }
-            ],
-            "firefox": {
-              "version_added": "59"
-            },
-            "firefox_android": {
-              "version_added": "79"
-            },
-            "ie": [
-              {
-                "version_added": "11"
-              },
-              {
-                "version_added": "10",
-                "alternative_name": "mspointerover"
-              }
-            ],
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "13"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "pointerrawupdate_event": {
-        "__compat": {
-          "description": "<code>pointerrawupdate</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/pointerrawupdate_event",
-          "spec_url": [
-            "https://w3c.github.io/pointerevents/#the-pointerrawupdate-event",
-            "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerrawupdate"
-          ],
-          "support": {
-            "chrome": {
-              "version_added": "77"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": false
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": true,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "pointerup_event": {
-        "__compat": {
-          "description": "<code>pointerup</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/pointerup_event",
-          "spec_url": [
-            "https://w3c.github.io/pointerevents/#the-pointerup-event",
-            "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerup"
-          ],
-          "support": {
-            "chrome": {
-              "version_added": "55"
-            },
-            "chrome_android": "mirror",
-            "edge": [
-              {
-                "version_added": "12"
-              },
-              {
-                "version_added": "12",
-                "version_removed": "79",
-                "alternative_name": "mspointerup"
-              }
-            ],
-            "firefox": {
-              "version_added": "59"
-            },
-            "firefox_android": {
-              "version_added": "79"
-            },
-            "ie": [
-              {
-                "version_added": "11"
-              },
-              {
-                "version_added": "10",
-                "alternative_name": "mspointerup"
-              }
-            ],
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "13"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
           },
           "status": {
             "experimental": false,
@@ -6393,7 +4168,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -6402,42 +4176,6 @@
             },
             "safari": {
               "version_added": "1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "prepend": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/prepend",
-          "spec_url": "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-prepend①",
-          "support": {
-            "chrome": {
-              "version_added": "54"
-            },
-            "chrome_android": "mirror",
-            "edge": {
-              "version_added": "17"
-            },
-            "firefox": {
-              "version_added": "49"
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "10"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
@@ -6469,7 +4207,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "10"
             },
@@ -6486,100 +4223,6 @@
             "webview_android": {
               "version_added": "≤37"
             }
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "querySelector": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/querySelector",
-          "spec_url": "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-queryselectorall①",
-          "support": {
-            "chrome": {
-              "version_added": "1"
-            },
-            "chrome_android": "mirror",
-            "edge": {
-              "version_added": "12"
-            },
-            "firefox": {
-              "version_added": "3.5"
-            },
-            "firefox_android": "mirror",
-            "ie": [
-              {
-                "version_added": "9"
-              },
-              {
-                "version_added": "8",
-                "partial_implementation": true,
-                "notes": "<code>querySelector()</code> is supported, but only for CSS 2.1 selectors."
-              }
-            ],
-            "oculus": "mirror",
-            "opera": {
-              "version_added": "10"
-            },
-            "opera_android": {
-              "version_added": "10.1"
-            },
-            "safari": {
-              "version_added": "3.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "querySelectorAll": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/querySelectorAll",
-          "spec_url": "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-queryselectorall①",
-          "support": {
-            "chrome": {
-              "version_added": "1"
-            },
-            "chrome_android": "mirror",
-            "edge": {
-              "version_added": "12"
-            },
-            "firefox": {
-              "version_added": "3.5"
-            },
-            "firefox_android": "mirror",
-            "ie": [
-              {
-                "version_added": "9"
-              },
-              {
-                "version_added": "8",
-                "partial_implementation": true,
-                "notes": "<code>querySelectorAll()</code> is supported, but only for CSS 2.1 selectors."
-              }
-            ],
-            "oculus": "mirror",
-            "opera": {
-              "version_added": "10"
-            },
-            "opera_android": {
-              "version_added": "10.1"
-            },
-            "safari": {
-              "version_added": "3.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
           },
           "status": {
             "experimental": false,
@@ -6615,7 +4258,6 @@
                 "prefix": "ms"
               }
             ],
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -6651,15 +4293,18 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
               "version_added": "7"
             },
-            "safari_ios": "mirror",
+            "safari_ios": {
+              "version_added": "7"
+            },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": {
+              "version_added": "4.4"
+            }
           },
           "status": {
             "experimental": false,
@@ -6688,7 +4333,6 @@
             "ie": {
               "version_added": "5"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "8"
             },
@@ -6728,7 +4372,6 @@
             "ie": {
               "version_added": "6"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -6768,7 +4411,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -6777,40 +4419,6 @@
             },
             "safari": {
               "version_added": "1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "replaceChildren": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/replaceChildren",
-          "spec_url": "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-replacechildren①",
-          "support": {
-            "chrome": {
-              "version_added": "86"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": "78"
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "14"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
@@ -6842,7 +4450,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "39"
             },
@@ -6913,7 +4520,6 @@
               "version_added": "11",
               "alternative_name": "msRequestFullscreen"
             },
-            "oculus": "mirror",
             "opera": [
               {
                 "version_added": "58"
@@ -6984,7 +4590,6 @@
               "ie": {
                 "version_added": false
               },
-              "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
@@ -7017,7 +4622,6 @@
               "ie": {
                 "version_added": false
               },
-              "oculus": "mirror",
               "opera": {
                 "version_added": false
               },
@@ -7074,7 +4678,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -7118,7 +4721,6 @@
               "ie": {
                 "version_added": false
               },
-              "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
@@ -7133,39 +4735,6 @@
               "standard_track": false,
               "deprecated": false
             }
-          }
-        }
-      },
-      "role": {
-        "__compat": {
-          "spec_url": "https://w3c.github.io/aria/#dom-ariamixin-role",
-          "support": {
-            "chrome": {
-              "version_added": "103"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "12.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
           }
         }
       },
@@ -7186,7 +4755,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -7218,7 +4786,6 @@
               "ie": {
                 "version_added": false
               },
-              "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
@@ -7251,7 +4818,6 @@
               "ie": {
                 "version_added": false
               },
-              "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
@@ -7284,7 +4850,6 @@
               "ie": {
                 "version_added": false
               },
-              "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
@@ -7306,10 +4871,7 @@
         "__compat": {
           "description": "<code>scroll</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/scroll_event",
-          "spec_url": [
-            "https://drafts.csswg.org/cssom-view/#eventdef-document-scroll",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onscroll"
-          ],
+          "spec_url": "https://drafts.csswg.org/cssom-view/#scrolling-events",
           "support": {
             "chrome": {
               "version_added": "1"
@@ -7325,7 +4887,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -7363,7 +4924,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -7395,7 +4955,6 @@
               "ie": {
                 "version_added": false
               },
-              "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
@@ -7428,7 +4987,6 @@
               "ie": {
                 "version_added": false
               },
-              "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
@@ -7461,7 +5019,6 @@
               "ie": {
                 "version_added": false
               },
-              "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
@@ -7507,7 +5064,6 @@
               "version_added": "5",
               "notes": "In Internet Explorer 5 through 7, if padding is set, the value of <code>scrollHeight</code> is equal to the sum of the top and bottom padding. This behavior was fixed in Internet Explorer 8."
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "8"
             },
@@ -7569,7 +5125,6 @@
                 "No support for <code>smooth</code> behavior or <code>center</code> options."
               ]
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -7620,7 +5175,6 @@
               "ie": {
                 "version_added": false
               },
-              "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
@@ -7646,7 +5200,9 @@
               "version_added": "1"
             },
             "chrome_android": "mirror",
-            "edge": "mirror",
+            "edge": {
+              "version_added": "79"
+            },
             "firefox": {
               "version_added": false
             },
@@ -7654,7 +5210,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -7698,7 +5253,6 @@
               "version_added": "5",
               "notes": "For right-to-left elements, this property uses 100-0 (most left to most right) instead of negative values."
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "8"
             },
@@ -7735,7 +5289,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -7769,7 +5322,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -7801,7 +5353,6 @@
               "ie": {
                 "version_added": false
               },
-              "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
@@ -7834,7 +5385,6 @@
               "ie": {
                 "version_added": false
               },
-              "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
@@ -7867,7 +5417,6 @@
               "ie": {
                 "version_added": false
               },
-              "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
@@ -7904,7 +5453,6 @@
             "ie": {
               "version_added": "5"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "8"
             },
@@ -7941,7 +5489,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -7978,7 +5525,6 @@
               "version_added": "5",
               "notes": "In Internet Explorer 5 through 7, if padding is set, the value of <code>scrollWidth</code> is equal to the sum of the left and right padding. This behavior was fixed in Internet Explorer 8."
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -8003,10 +5549,7 @@
         "__compat": {
           "description": "<code>securitypolicyviolation</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/securitypolicyviolation_event",
-          "spec_url": [
-            "https://html.spec.whatwg.org/multipage/indices.html#event-securitypolicyviolation",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onsecuritypolicyviolation"
-          ],
+          "spec_url": "https://html.spec.whatwg.org/multipage/indices.html#event-securitypolicyviolation",
           "support": {
             "chrome": {
               "version_added": "41"
@@ -8022,7 +5565,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -8036,6 +5578,46 @@
             "experimental": false,
             "standard_track": true,
             "deprecated": true
+          }
+        }
+      },
+      "select_event": {
+        "__compat": {
+          "description": "<code>select</code> event",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/select_event",
+          "spec_url": "https://w3c.github.io/uievents/#event-type-select",
+          "support": {
+            "chrome": {
+              "version_added": "1"
+            },
+            "chrome_android": "mirror",
+            "edge": {
+              "version_added": "12"
+            },
+            "firefox": {
+              "version_added": "6"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": "9"
+            },
+            "opera": {
+              "version_added": "≤12.1"
+            },
+            "opera_android": {
+              "version_added": "≤12.1"
+            },
+            "safari": {
+              "version_added": "1"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
           }
         }
       },
@@ -8059,7 +5641,6 @@
               "version_added": "5",
               "notes": "In Internet Explorer 7 and earlier, <code>setAttribute</code> doesn't set styles and removes events when you try to set them."
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "8"
             },
@@ -8099,7 +5680,6 @@
             "ie": {
               "version_added": "6"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -8141,7 +5721,6 @@
               "version_added": "9",
               "notes": "Returns a <code>ClientRectList</code> with <a href='https://docs.microsoft.com/en-us/previous-versions/hh826029(v=vs.85)'><code>ClientRect</code></a> objects (which do not contain <code>x</code> and <code>y</code> properties) instead of <a href='https://developer.mozilla.org/docs/Web/API/DOMRect'><code>DOMRect</code></a> objects."
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -8181,7 +5760,6 @@
             "ie": {
               "version_added": "9"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "≤12.1"
             },
@@ -8222,7 +5800,6 @@
               "version_added": "5",
               "notes": "The <code>retargetToElement</code> parameter to <code>Element.setCapture()</code> was introduced in Internet Explorer 5.5."
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -8245,10 +5822,26 @@
           "spec_url": "https://wicg.github.io/sanitizer-api/#dom-element-sethtml",
           "support": {
             "chrome": {
-              "version_added": "105"
+              "version_added": "93",
+              "flags": [
+                {
+                  "type": "preference",
+                  "name": "enable-experimental-web-platform-features",
+                  "value_to_set": "enabled"
+                }
+              ]
             },
             "chrome_android": "mirror",
-            "edge": "mirror",
+            "edge": {
+              "version_added": "93",
+              "flags": [
+                {
+                  "type": "preference",
+                  "name": "enable-experimental-web-platform-features",
+                  "value_to_set": "enabled"
+                }
+              ]
+            },
             "firefox": {
               "version_added": "94",
               "flags": [
@@ -8263,8 +5856,16 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
-            "opera": "mirror",
+            "opera": {
+              "version_added": "79",
+              "flags": [
+                {
+                  "type": "preference",
+                  "name": "enable-experimental-web-platform-features",
+                  "value_to_set": "enabled"
+                }
+              ]
+            },
             "opera_android": "mirror",
             "safari": {
               "version_added": false
@@ -8309,7 +5910,6 @@
                 "prefix": "ms"
               }
             ],
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -8343,7 +5943,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -8351,7 +5950,9 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": {
+              "version_added": "37"
+            }
           },
           "status": {
             "experimental": false,
@@ -8390,7 +5991,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -8424,7 +6024,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -8460,7 +6059,6 @@
             "ie": {
               "version_added": "5"
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": "8"
             },
@@ -8500,7 +6098,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -8521,10 +6118,7 @@
         "__compat": {
           "description": "<code>touchcancel</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/touchcancel_event",
-          "spec_url": [
-            "https://w3c.github.io/touch-events/#event-touchcancel",
-            "https://w3c.github.io/touch-events/#dom-globaleventhandlers-ontouchcancel"
-          ],
+          "spec_url": "https://w3c.github.io/touch-events/#event-touchcancel",
           "support": {
             "chrome": {
               "version_added": "22"
@@ -8542,7 +6136,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": false
             },
@@ -8567,10 +6160,7 @@
         "__compat": {
           "description": "<code>touchend</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/touchend_event",
-          "spec_url": [
-            "https://w3c.github.io/touch-events/#event-touchend",
-            "https://w3c.github.io/touch-events/#dom-globaleventhandlers-ontouchend"
-          ],
+          "spec_url": "https://w3c.github.io/touch-events/#event-touchend",
           "support": {
             "chrome": {
               "version_added": "22"
@@ -8588,7 +6178,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": false
             },
@@ -8613,10 +6202,7 @@
         "__compat": {
           "description": "<code>touchmove</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/touchmove_event",
-          "spec_url": [
-            "https://w3c.github.io/touch-events/#event-touchmove",
-            "https://w3c.github.io/touch-events/#dom-globaleventhandlers-ontouchmove"
-          ],
+          "spec_url": "https://w3c.github.io/touch-events/#event-touchmove",
           "support": {
             "chrome": {
               "version_added": "22"
@@ -8634,7 +6220,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": false
             },
@@ -8659,10 +6244,7 @@
         "__compat": {
           "description": "<code>touchstart</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/touchstart_event",
-          "spec_url": [
-            "https://w3c.github.io/touch-events/#event-touchstart",
-            "https://w3c.github.io/touch-events/#dom-globaleventhandlers-ontouchstart"
-          ],
+          "spec_url": "https://w3c.github.io/touch-events/#event-touchstart",
           "support": {
             "chrome": {
               "version_added": "22"
@@ -8680,7 +6262,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": {
               "version_added": false
             },
@@ -8691,241 +6272,6 @@
             "safari_ios": {
               "version_added": "≤3"
             },
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "transitioncancel_event": {
-        "__compat": {
-          "description": "<code>transitioncancel</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/transitioncancel_event",
-          "spec_url": [
-            "https://drafts.csswg.org/css-transitions/#transitioncancel",
-            "https://drafts.csswg.org/css-transitions/#dom-globaleventhandlers-ontransitioncancel"
-          ],
-          "support": {
-            "chrome": [
-              {
-                "version_added": "87"
-              },
-              {
-                "version_added": "74",
-                "version_removed": "87",
-                "partial_implementation": true,
-                "notes": "The <code>ontransitioncancel</code> event handler property is not supported. To listen to this event, use <code>element.addEventListener('transitioncancel', function() {});</code>."
-              }
-            ],
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": "53"
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": [
-              {
-                "version_added": "13.1"
-              },
-              {
-                "version_added": "12",
-                "version_removed": "13.1",
-                "partial_implementation": true,
-                "notes": "Although the <code>ontransitioncancel</code> event handler property is supported, the <code>transitioncancel</code> event is never fired."
-              }
-            ],
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "transitionend_event": {
-        "__compat": {
-          "description": "<code>transitionend</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/transitionend_event",
-          "spec_url": "https://drafts.csswg.org/css-transitions/#transitionend",
-          "support": {
-            "chrome": [
-              {
-                "version_added": "26"
-              },
-              {
-                "alternative_name": "webkittransitionend",
-                "version_added": "1"
-              }
-            ],
-            "chrome_android": "mirror",
-            "edge": [
-              {
-                "version_added": "18"
-              },
-              {
-                "alternative_name": "webkittransitionend",
-                "version_added": "79"
-              },
-              {
-                "version_added": "12",
-                "version_removed": "18",
-                "partial_implementation": true,
-                "notes": "The <code>ontransitionend</code> event handler property is not supported. To listen to this event, use <code>element.addEventListener('transitionend', function() {});</code>."
-              }
-            ],
-            "firefox": {
-              "version_added": "51"
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": "10",
-              "partial_implementation": true,
-              "notes": "The <code>ontransitionend</code> event handler property is not supported. To listen to this event, use <code>element.addEventListener('transitionend', function() {});</code>."
-            },
-            "oculus": "mirror",
-            "opera": [
-              {
-                "version_added": "12.1"
-              },
-              {
-                "alternative_name": "webkittransitionend",
-                "version_added": "15"
-              },
-              {
-                "alternative_name": "otransitionend",
-                "version_added": "11.6",
-                "version_removed": "15"
-              }
-            ],
-            "opera_android": [
-              {
-                "version_added": "12.1"
-              },
-              {
-                "alternative_name": "webkittransitionend",
-                "version_added": "14"
-              },
-              {
-                "alternative_name": "otransitionend",
-                "version_added": "12",
-                "version_removed": "14"
-              }
-            ],
-            "safari": [
-              {
-                "version_added": "7"
-              },
-              {
-                "alternative_name": "webkittransitionend",
-                "version_added": "4"
-              }
-            ],
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "transitionrun_event": {
-        "__compat": {
-          "description": "<code>transitionrun</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/transitionrun_event",
-          "spec_url": "https://drafts.csswg.org/css-transitions/#transitionrun",
-          "support": {
-            "chrome": {
-              "version_added": "74"
-            },
-            "chrome_android": "mirror",
-            "edge": {
-              "version_added": "12"
-            },
-            "firefox": {
-              "version_added": "53"
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": "10",
-              "partial_implementation": true,
-              "notes": "The <code>ontransitionrun</code> event handler property is not supported. To listen to this event, use <code>element.addEventListener('transitionrun', function() {});</code>."
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": [
-              {
-                "version_added": "13.1"
-              },
-              {
-                "version_added": "12",
-                "partial_implementation": true,
-                "notes": "The event handler exists but will never be called."
-              }
-            ],
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "transitionstart_event": {
-        "__compat": {
-          "description": "<code>transitionstart</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/transitionstart_event",
-          "spec_url": "https://drafts.csswg.org/css-transitions/#transitionstart",
-          "support": {
-            "chrome": {
-              "version_added": "74"
-            },
-            "chrome_android": "mirror",
-            "edge": {
-              "version_added": "12"
-            },
-            "firefox": {
-              "version_added": "53"
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": "10",
-              "partial_implementation": true,
-              "notes": "The <code>ontransitionstart</code> event handler property is not supported. To listen to this event, use <code>element.addEventListener('transitionstart', function() {});</code>."
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": [
-              {
-                "version_added": "13.1"
-              },
-              {
-                "version_added": "12",
-                "partial_implementation": true,
-                "notes": "The event handler exists but will never be called."
-              }
-            ],
-            "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
             "webview_android": "mirror"
           },
@@ -8953,7 +6299,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -8989,7 +6334,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -9025,7 +6369,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -9061,7 +6404,6 @@
             "ie": {
               "version_added": false
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
@@ -9084,13 +6426,10 @@
         "__compat": {
           "description": "<code>wheel</code> event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Element/wheel_event",
-          "spec_url": [
-            "https://w3c.github.io/uievents/#event-type-wheel",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onwheel"
-          ],
+          "spec_url": "https://w3c.github.io/uievents/#event-type-wheel",
           "support": {
             "chrome": {
-              "version_added": "31"
+              "version_added": "61"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -9102,16 +6441,15 @@
             "firefox_android": "mirror",
             "ie": {
               "version_added": "9",
-              "notes": "The <code>onwheel</code> event handler property is not supported. To listen to this event, use <code>element.addEventListener('wheel', function() {});</code>. See <a href='https://connect.microsoft.com/IE/feedback/details/782835/missing-onwheel-attribute-for-the-wheel-event-although-its-supported-via-addeventlistener'>IE bug 782835</a>."
+              "notes": "Internet Explorer only exposes the wheel event via <code>addEventListener</code>; there is no <code>onwheel</code> attribute on DOM objects. See <a href='https://connect.microsoft.com/IE/feedback/details/782835/missing-onwheel-attribute-for-the-wheel-event-although-its-supported-via-addeventlistener'>IE bug 782835</a>."
             },
-            "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
               "version_added": "7"
             },
             "safari_ios": {
-              "version_added": false
+              "version_added": "7"
             },
             "samsunginternet_android": "mirror",
             "webview_android": "mirror"
