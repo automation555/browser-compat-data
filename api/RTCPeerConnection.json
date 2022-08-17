@@ -7,7 +7,7 @@
         "support": {
           "chrome": [
             {
-              "version_added": "56"
+              "version_added": "23"
             },
             {
               "prefix": "webkit",
@@ -26,22 +26,14 @@
           ],
           "firefox": [
             {
-              "version_added": "44"
+              "version_added": "17> ≤22"
             },
             {
               "prefix": "moz",
               "version_added": "22"
             }
           ],
-          "firefox_android": [
-            {
-              "version_added": "44"
-            },
-            {
-              "prefix": "moz",
-              "version_added": "24"
-            }
-          ],
+          "firefox_android": "mirror",
           "ie": {
             "version_added": false
           },
@@ -96,15 +88,7 @@
                 "version_added": "22"
               }
             ],
-            "firefox_android": [
-              {
-                "version_added": "44"
-              },
-              {
-                "prefix": "moz",
-                "version_added": "24"
-              }
-            ],
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -265,9 +249,7 @@
               "firefox": {
                 "version_added": "22"
               },
-              "firefox_android": {
-                "version_added": "24"
-              },
+              "firefox_android": "mirror",
               "ie": {
                 "version_added": false
               },
@@ -417,7 +399,7 @@
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-addicecandidate",
           "support": {
             "chrome": {
-              "version_added": "24"
+              "version_added": "23"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -428,7 +410,7 @@
               "notes": "Starting in Firefox 68, the <code>candidate</code> parameter is optional when calling <code>addIceCandidate()</code>. A <code>null</code> value for <code>candidate</code> indicates no more candidates will be sent, while an empty <code>candidate</code> string indicates that no more candidates will be sent for the current generation of candidates."
             },
             "firefox_android": {
-              "version_added": "24",
+              "version_added": "44",
               "notes": "Starting in Firefox 68, the <code>candidate</code> parameter is optional when calling <code>addIceCandidate()</code>. A <code>null</code> value for <code>candidate</code> indicates no more candidates will be sent, while an empty <code>candidate</code> string indicates that no more candidates will be sent for the current generation of candidates."
             },
             "ie": {
@@ -489,7 +471,7 @@
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCPeerConnection/addStream",
           "support": {
             "chrome": {
-              "version_added": "24",
+              "version_added": "23",
               "notes": "See <a href='https://crbug.com/697059'>bug 697059</a>."
             },
             "chrome_android": "mirror",
@@ -500,14 +482,14 @@
               "version_added": "22"
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "44"
             },
             "ie": {
               "version_added": false
             },
             "oculus": "mirror",
             "opera": {
-              "version_added": "15"
+              "version_added": "15> ≤89"
             },
             "opera_android": {
               "version_added": "14"
@@ -537,7 +519,7 @@
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCPeerConnection/addstream_event",
           "support": {
             "chrome": {
-              "version_added": "24",
+              "version_added": "23",
               "notes": "See <a href='https://crbug.com/697059'>bug 697059</a>."
             },
             "chrome_android": "mirror",
@@ -548,20 +530,21 @@
               "version_added": "22"
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "44"
             },
             "ie": {
               "version_added": false
             },
             "oculus": "mirror",
             "opera": {
-              "version_added": "15"
+              "version_added": "15> ≤89"
             },
             "opera_android": {
               "version_added": "14"
             },
             "safari": {
-              "version_added": false
+              "version_added": "11",
+              "version_removed": "12"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": {
@@ -589,10 +572,10 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "22"
+              "version_added": "34"
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "44"
             },
             "ie": {
               "version_added": false
@@ -633,10 +616,10 @@
             },
             "oculus": "mirror",
             "opera": {
-              "version_added": false
+              "version_added": "15> ≤89"
             },
             "opera_android": {
-              "version_added": false
+              "version_added": "≤70"
             },
             "safari": {
               "version_added": "11"
@@ -785,7 +768,9 @@
             "firefox": {
               "version_added": "47"
             },
-            "firefox_android": "mirror",
+            "firefox_android": {
+              "version_added": "44"
+            },
             "ie": {
               "version_added": false
             },
@@ -821,9 +806,7 @@
             "firefox": {
               "version_added": "22"
             },
-            "firefox_android": {
-              "version_added": "24"
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -919,7 +902,7 @@
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-createanswer",
           "support": {
             "chrome": {
-              "version_added": "24"
+              "version_added": "23"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -929,7 +912,7 @@
               "version_added": "22"
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "44"
             },
             "ie": {
               "version_added": false
@@ -1004,7 +987,7 @@
               "version_added": "22"
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "44"
             },
             "ie": {
               "version_added": false
@@ -1031,7 +1014,7 @@
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCPeerConnection/createDTMFSender",
           "support": {
             "chrome": {
-              "version_added": "27"
+              "version_added": "26"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -1039,7 +1022,7 @@
               "version_added": "22"
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": false
             },
             "ie": {
               "version_added": false
@@ -1067,7 +1050,7 @@
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-createoffer",
           "support": {
             "chrome": {
-              "version_added": "24"
+              "version_added": "23"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -1077,7 +1060,7 @@
               "version_added": "22"
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "44"
             },
             "ie": {
               "version_added": false
@@ -1149,10 +1132,10 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "22"
+              "version_added": "57"
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "44"
             },
             "ie": {
               "version_added": false
@@ -1215,7 +1198,7 @@
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-ondatachannel",
           "support": {
             "chrome": {
-              "version_added": "25"
+              "version_added": "24"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -1223,7 +1206,7 @@
               "version_added": "22"
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "44"
             },
             "ie": {
               "version_added": false
@@ -1251,15 +1234,15 @@
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-generatecertificate",
           "support": {
             "chrome": {
-              "version_added": "48"
+              "version_added": "56"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "22"
+              "version_added": "44"
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "44"
             },
             "ie": {
               "version_added": false
@@ -1296,10 +1279,10 @@
               "version_added": "15"
             },
             "firefox": {
-              "version_added": "22"
+              "version_added": "33"
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "44"
             },
             "ie": {
               "version_added": false
@@ -1363,7 +1346,7 @@
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCPeerConnection/getLocalStreams",
           "support": {
             "chrome": {
-              "version_added": "27",
+              "version_added": "26",
               "notes": "See <a href='https://crbug.com/697059'>bug 697059</a>."
             },
             "chrome_android": "mirror",
@@ -1373,13 +1356,15 @@
             "firefox": {
               "version_added": "24"
             },
-            "firefox_android": "mirror",
+            "firefox_android": {
+              "version_added": "44"
+            },
             "ie": {
               "version_added": false
             },
             "oculus": "mirror",
             "opera": {
-              "version_added": "15"
+              "version_added": "15> ≤89"
             },
             "opera_android": {
               "version_added": "15"
@@ -1444,7 +1429,7 @@
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCPeerConnection/getRemoteStreams",
           "support": {
             "chrome": {
-              "version_added": "27",
+              "version_added": "26",
               "notes": "See <a href='https://crbug.com/697059'>bug 697059</a>."
             },
             "chrome_android": "mirror",
@@ -1454,13 +1439,15 @@
             "firefox": {
               "version_added": "24"
             },
-            "firefox_android": "mirror",
+            "firefox_android": {
+              "version_added": "44"
+            },
             "ie": {
               "version_added": false
             },
             "oculus": "mirror",
             "opera": {
-              "version_added": "15"
+              "version_added": "15> ≤89"
             },
             "opera_android": {
               "version_added": "15"
@@ -1642,8 +1629,7 @@
               "version_removed": "53"
             },
             "firefox_android": {
-              "version_added": "24",
-              "version_removed": "53"
+              "version_added": false
             },
             "ie": {
               "version_added": false
@@ -1712,7 +1698,7 @@
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-onicecandidate",
           "support": {
             "chrome": {
-              "version_added": "24"
+              "version_added": "23"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -1722,7 +1708,7 @@
               "version_added": "22"
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "44"
             },
             "ie": {
               "version_added": false
@@ -1823,7 +1809,7 @@
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-oniceconnectionstatechange",
           "support": {
             "chrome": {
-              "version_added": "28"
+              "version_added": "27"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -1832,7 +1818,9 @@
             "firefox": {
               "version_added": "24"
             },
-            "firefox_android": "mirror",
+            "firefox_android": {
+              "version_added": "44"
+            },
             "ie": {
               "version_added": false
             },
@@ -1869,7 +1857,7 @@
               "version_added": "22"
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "44"
             },
             "ie": {
               "version_added": false
@@ -1905,10 +1893,10 @@
               "version_added": "15"
             },
             "firefox": {
-              "version_added": "22"
+              "version_added": "53"
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "44"
             },
             "ie": {
               "version_added": false
@@ -1969,7 +1957,7 @@
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-localdescription",
           "support": {
             "chrome": {
-              "version_added": "24"
+              "version_added": "23"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -1979,7 +1967,7 @@
               "version_added": "22"
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "44"
             },
             "ie": {
               "version_added": false
@@ -2008,24 +1996,18 @@
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-onnegotiationneeded",
           "support": {
             "chrome": {
-              "version_added": "24"
+              "version_added": "23"
             },
             "chrome_android": "mirror",
             "edge": {
               "version_added": "15"
             },
-            "firefox": [
-              {
-                "version_added": "38"
-              },
-              {
-                "version_added": "24",
-                "version_removed": "38",
-                "partial_implementation": true,
-                "notes": "Although the <code>onnegotiationneeded</code> property is supported, the <code>negotiationneeded</code> event is never fired."
-              }
-            ],
-            "firefox_android": "mirror",
+            "firefox": {
+              "version_added": "24"
+            },
+            "firefox_android": {
+              "version_added": "44"
+            },
             "ie": {
               "version_added": false
             },
@@ -2094,10 +2076,10 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "22"
+              "version_added": "57"
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "44"
             },
             "ie": {
               "version_added": false
@@ -2130,10 +2112,10 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "22"
+              "version_added": "57"
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "44"
             },
             "ie": {
               "version_added": false
@@ -2161,7 +2143,7 @@
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-remotedescription",
           "support": {
             "chrome": {
-              "version_added": "24"
+              "version_added": "23"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -2171,7 +2153,7 @@
               "version_added": "22"
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "44"
             },
             "ie": {
               "version_added": false
@@ -2198,7 +2180,7 @@
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCPeerConnection/removeStream",
           "support": {
             "chrome": {
-              "version_added": "24",
+              "version_added": "23",
               "notes": "See <a href='https://crbug.com/697059'>bug 697059</a>."
             },
             "chrome_android": "mirror",
@@ -2210,15 +2192,14 @@
               "version_removed": "51"
             },
             "firefox_android": {
-              "version_added": "24",
-              "version_removed": "51"
+              "version_added": false
             },
             "ie": {
               "version_added": false
             },
             "oculus": "mirror",
             "opera": {
-              "version_added": "15"
+              "version_added": "15> ≤89"
             },
             "opera_android": {
               "version_added": "14"
@@ -2248,7 +2229,7 @@
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCPeerConnection/removestream_event",
           "support": {
             "chrome": {
-              "version_added": "24",
+              "version_added": "23",
               "notes": "See <a href='https://crbug.com/697059'>bug 697059</a>."
             },
             "chrome_android": "mirror",
@@ -2260,7 +2241,7 @@
               "version_removed": "60"
             },
             "firefox_android": {
-              "version_added": "24",
+              "version_added": "44",
               "version_removed": "60"
             },
             "ie": {
@@ -2268,7 +2249,7 @@
             },
             "oculus": "mirror",
             "opera": {
-              "version_added": "15"
+              "version_added": "15> ≤89"
             },
             "opera_android": {
               "version_added": "14"
@@ -2302,10 +2283,10 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "22"
+              "version_added": "34"
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "44"
             },
             "ie": {
               "version_added": false
@@ -2343,13 +2324,15 @@
             "firefox": {
               "version_added": "70"
             },
-            "firefox_android": "mirror",
+            "firefox_android": {
+              "version_added": "≤102"
+            },
             "ie": {
               "version_added": false
             },
             "oculus": "mirror",
             "opera": {
-              "version_added": false
+              "version_added": "15> ≤89"
             },
             "opera_android": "mirror",
             "safari": {
@@ -2386,7 +2369,7 @@
             },
             "oculus": "mirror",
             "opera": {
-              "version_added": false
+              "version_added": "15> ≤89"
             },
             "opera_android": "mirror",
             "safari": {
@@ -2409,7 +2392,7 @@
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-setconfiguration",
           "support": {
             "chrome": {
-              "version_added": "48"
+              "version_added": "58"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -2483,7 +2466,7 @@
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-setlocaldescription",
           "support": {
             "chrome": {
-              "version_added": "24"
+              "version_added": "23"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -2494,8 +2477,7 @@
               "notes": "Firefox does not support descriptions of type <code>pranswer</code>."
             },
             "firefox_android": {
-              "version_added": "24",
-              "notes": "Firefox does not support descriptions of type <code>pranswer</code>."
+              "version_added": "44"
             },
             "ie": {
               "version_added": false
@@ -2594,7 +2576,7 @@
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-setremotedescription",
           "support": {
             "chrome": {
-              "version_added": "24"
+              "version_added": "23"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -2604,7 +2586,7 @@
               "version_added": "22"
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "44"
             },
             "ie": {
               "version_added": false
@@ -2711,7 +2693,9 @@
             "firefox": {
               "version_added": "24"
             },
-            "firefox_android": "mirror",
+            "firefox_android": {
+              "version_added": "44"
+            },
             "ie": {
               "version_added": false
             },
@@ -2739,24 +2723,18 @@
           "spec_url": "https://w3c.github.io/webrtc-pc/#event-signalingstatechange",
           "support": {
             "chrome": {
-              "version_added": "28"
+              "version_added": "27"
             },
             "chrome_android": "mirror",
             "edge": {
               "version_added": "15"
             },
-            "firefox": [
-              {
-                "version_added": "36"
-              },
-              {
-                "version_added": "24",
-                "version_removed": "36",
-                "partial_implementation": true,
-                "notes": "Although the <code>onsignalingstatechange</code> property is supported, the <code>signalingstatechange</code> event is not fired as an <code>Event</code> object. See <a href='https://bugzil.la/1075133'>bug 1075133</a>."
-              }
-            ],
-            "firefox_android": "mirror",
+            "firefox": {
+              "version_added": "24"
+            },
+            "firefox_android": {
+              "version_added": "44"
+            },
             "ie": {
               "version_added": false
             },
@@ -2767,7 +2745,7 @@
               "version_added": "11"
             },
             "safari_ios": {
-              "version_added": false
+              "version_added": "≤15.5"
             },
             "samsunginternet_android": "mirror",
             "webview_android": "mirror"
@@ -2791,10 +2769,10 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "22"
+              "version_added": "46"
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "44"
             },
             "ie": {
               "version_added": false
