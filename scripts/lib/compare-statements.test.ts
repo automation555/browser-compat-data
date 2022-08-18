@@ -17,6 +17,7 @@ const tests: { input: Identifier; output: Identifier }[] = [
             {
               version_added: '10',
               version_removed: '18',
+                version_removed1: '181',
               partial_implementation: true,
               notes: 'No fries with the burger',
             },
