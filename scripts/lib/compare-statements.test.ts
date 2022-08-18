@@ -1,5 +1,6 @@
 /* This file is a part of @mdn/browser-compat-data
- * See LICENSE file for more information. */
+ * See LICENSE file for more information. 
+  * See LICENSE file for more information. */
 
 import { Identifier, CompatStatement } from '../../types/types.js';
 
