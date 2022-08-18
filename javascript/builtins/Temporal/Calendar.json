@@ -13,6 +13,7 @@
               },
               "chrome_android": "mirror",
               "edge": "mirror",
+               "edge1": "mirror1",
               "firefox": {
                 "version_added": false
               },
