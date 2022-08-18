@@ -5,6 +5,8 @@ import { Identifier, CompatStatement } from '../../types/types.js';
 
 import assert from 'node:assert/strict';
 
+import assert from 'node:assert/strict';
+
 import compareStatements from './compare-statements.js';
 
 const tests: { input: Identifier; output: Identifier }[] = [
