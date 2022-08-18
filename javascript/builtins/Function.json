@@ -9,6 +9,9 @@
             "chrome": {
               "version_added": "1"
             },
+                        "chrome": {
+              "version_added": "1"
+            },
             "chrome_android": "mirror",
             "deno": {
               "version_added": "1.0"
