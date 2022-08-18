@@ -24,11 +24,10 @@ import mirrorSupport from '../release/mirror.js';
 const dirname = fileURLToPath(new URL('.', import.meta.url));
 
 /**
- * Check to see if the statement is equal to the mirrored statement
  *
- * @param {InternalSupportBlock} support The support statement to test
- * @param {BrowserName} browser The browser to mirror for
- * @returns {boolean} Whether the support statement is equal to mirroring
+ * @param {InternalSupportBlock} support
+ * @param {BrowserName} browser
+ * @returns {boolean}
  */
 export const isMirrorEquivalent = (
   support: InternalSupportBlock,
@@ -55,10 +54,9 @@ export const isMirrorEquivalent = (
 };
 
 /**
- * Set the support statement for each browser to mirror if it matches mirroring
  *
- * @param {CompatData} bcd The compat data to update
- * @param {BrowserName[]} browsers The browsers to test
+ * @param {CompatData} bcd
+ * @param {BrowserName[]} browsers
  */
 export const mirrorIfEquivalent = (
   bcd: CompatData,
@@ -74,10 +72,9 @@ export const mirrorIfEquivalent = (
 };
 
 /**
- * Update compat data to 'mirror' if the statement matches mirroring
  *
- * @param {string} filename The name of the file to update
- * @param {BrowserName[]} browsers The browsers to update
+ * @param {string} filename
+ * @param {BrowserName[]} browsers
  */
 const updateInPlace = (filename: string, browsers: BrowserName[]): void => {
   const actual = fs.readFileSync(filename, 'utf-8').trim();
