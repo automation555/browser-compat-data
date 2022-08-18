@@ -1,11 +1,11 @@
 /* This file is a part of @mdn/browser-compat-data
  * See LICENSE file for more information. */
 
-import { Linter, Logger, LinterData } from '../utils.js';
+import { Linter, Logger } from '../utils.js';
 import {
   BrowserName,
+  CompatStatement,
   SimpleSupportStatement,
-  SupportBlock,
   VersionValue,
 } from '../../types/types.js';
 import {
@@ -13,7 +13,7 @@ import {
   InternalSupportStatement,
 } from '../../types/index';
 
-import compareVersions from 'compare-versions';
+import compareVersions from '../../scripts/lib/compare-versions.js';
 import chalk from 'chalk-template';
 
 import bcd from '../../index.js';
@@ -32,8 +32,6 @@ const VERSION_RANGE_BROWSERS: { [browser: string]: string[] } = {
 };
 
 const browserTips: { [browser: string]: string } = {
-  nodejs:
-    'BCD does not record every individual version of Node.js, only the releases that update V8 engine versions or add a new feature. You may need to add the release to browsers/nodejs.json.',
   safari_ios:
     'The version numbers for Safari for iOS are based upon the iOS version number rather than the Safari version number. Maybe you are trying to use the desktop version number?',
   opera_android:
@@ -84,11 +82,11 @@ const realValuesRequired: { [category: string]: string[] } = {
  * @param {VersionValue} version The version to test
  * @returns {boolean} Whether the browser allows that version
  */
-const isValidVersion = (
+function isValidVersion(
   browser: BrowserName,
   category: string,
   version: VersionValue,
-): boolean => {
+): boolean {
   if (typeof version === 'string') {
     return validBrowserVersions[browser].includes(version);
   } else if (
@@ -96,21 +94,27 @@ const isValidVersion = (
     version !== false
   ) {
     return false;
+  } else {
+    return true;
   }
-  return true;
-};
+}
+
+function hasVersionAddedOnly(statement: SimpleSupportStatement): boolean {
+  const keys = Object.keys(statement);
+  return keys.length === 1 && keys[0] === 'version_added';
+}
 
 /**
  * Checks if the version number of version_removed is greater than or equal to
  * that of version_added, assuming they are both version strings. If either one
  * is not a valid version string, return null.
  *
- * @param {SimpleSupportStatement} statement The statement to test
- * @returns {(boolean|null)} Whether the version added was earlier than the version removed
+ * @param {SimpleSupportStatement} statement
+ * @returns {(boolean|null)}
  */
-const addedBeforeRemoved = (
+export function addedBeforeRemoved(
   statement: SimpleSupportStatement,
-): boolean | null => {
+): boolean | null {
   if (
     typeof statement.version_added !== 'string' ||
     typeof statement.version_removed !== 'string'
@@ -118,29 +122,21 @@ const addedBeforeRemoved = (
     return false;
   }
 
-  // In order to ensure that the versions could be displayed without the "≤"
-  // markers and still make sense, compare the versions without them. This
-  // means that combinations like version_added: "≤37" + version_removed: "37"
-  // are not allowed, even though this can be technically correct.
-  const added = statement.version_added.replace('≤', '');
-  const removed = statement.version_removed.replace('≤', '');
+  const added = statement.version_added;
+  const removed = statement.version_removed;
 
   if (!compareVersions.validate(added) || !compareVersions.validate(removed)) {
     return null;
   }
 
-  if (added === 'preview' && removed === 'preview') {
-    return false;
-  }
-  if (added === 'preview' && removed !== 'preview') {
-    return false;
-  }
-  if (added !== 'preview' && removed === 'preview') {
-    return true;
-  }
-
-  return compareVersions.compare(added, removed, '<');
-};
+  // Note that this disallows combinations like version_added: "≤37" +
+  // version_removed: "37", even though this can be technically correct.
+  return compareVersions.compare(
+    statement.version_added,
+    statement.version_removed,
+    '<',
+  );
+}
 
 /**
  * Check the data for any errors in provided versions
@@ -148,12 +144,13 @@ const addedBeforeRemoved = (
  * @param {SupportBlock} supportData The data to test
  * @param {string} category The category the data
  * @param {Logger} logger The logger to output errors to
+ * @returns {void}
  */
-const checkVersions = (
+function checkVersions(
   supportData: InternalSupportBlock,
   category: string,
   logger: Logger,
-): void => {
+): void {
   const browsersToCheck = Object.keys(supportData) as BrowserName[];
 
   for (const browser of browsersToCheck) {
@@ -163,6 +160,8 @@ const checkVersions = (
       if (!supportStatement) {
         continue;
       }
+
+      let sawVersionAddedOnly = false;
 
       for (const statement of Array.isArray(supportStatement)
         ? supportStatement
@@ -184,6 +183,8 @@ const checkVersions = (
           }
           continue;
         }
+
+        const statementKeys = Object.keys(statement);
 
         for (const property of ['version_added', 'version_removed']) {
           const version = statement[property];
@@ -218,10 +219,23 @@ const checkVersions = (
           }
         }
 
-        if ('flags' in statement && !browsers[browser].accepts_flags) {
-          logger.error(
-            chalk`This browser ({bold ${browser}}) does not support flags, so support cannot be behind a flag for this feature.`,
-          );
+        if ('flags' in statement) {
+          if (browsers[browser].accepts_flags === false) {
+            logger.error(
+              chalk`This browser ({bold ${browser}}) does not support flags, so support cannot be behind a flag for this feature.`,
+            );
+          }
+        }
+
+        if (hasVersionAddedOnly(statement)) {
+          if (sawVersionAddedOnly) {
+            logger.error(
+              chalk`{bold ${browser}} has multiple support statements with only {bold version_added}.`,
+            );
+            break;
+          } else {
+            sawVersionAddedOnly = true;
+          }
         }
 
         if (statement.version_added === false) {
@@ -238,28 +252,30 @@ const checkVersions = (
 
         if (
           Array.isArray(supportStatement) &&
-          statement.version_added === false
+          statement.version_added === false &&
+          statementKeys.length == 1 &&
+          statementKeys[0] == 'version_added'
         ) {
           logger.error(
-            chalk`{bold ${browser}} cannot have a {bold version_added: false} in an array of statements.`,
+            chalk`{bold ${browser}} cannot have a {bold version_added: false} only in an array of statements.`,
           );
         }
       }
     }
   }
-};
+}
 
 export default {
   name: 'Versions',
   description: 'Test the version numbers of support statements',
   scope: 'feature',
-  /**
-   * Test the data
-   *
-   * @param {Logger} logger The logger to output errors to
-   * @param {LinterData} root The data to test
-   */
-  check: (logger: Logger, { data, path: { category } }: LinterData) => {
+  check(
+    logger: Logger,
+    {
+      data,
+      path: { category },
+    }: { data: CompatStatement; path: { category: string } },
+  ) {
     checkVersions(data.support, category, logger);
   },
 } as Linter;
