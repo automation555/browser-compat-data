@@ -150,12 +150,7 @@ function main() {
         wkbug = href;
       }
     }
-    // List entries with more than one bug:
-    // if (!!crbug + !!bzbug + !!wkbug > 1) {
-    //   console.log(path);
-    // }
-    // There can only be one link, so pick one (if any). Alternatively, we could
-    // have one bug column per engine.
+ 
     let bug = crbug || bzbug || wkbug;
     if (bug) {
       crbug = `=HYPERLINK(${JSON.stringify(bug)};${JSON.stringify(bug.substr(8))})`;
