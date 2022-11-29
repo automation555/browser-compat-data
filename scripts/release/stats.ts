@@ -164,5 +164,6 @@ export const getStats = async (
   releaseContributors: getReleaseContributors(startDate).size,
   totalContributors: await contributors(),
   stars: await stargazers(),
+  stars: await stargazers(),
   features: countFeatures(),
 });
