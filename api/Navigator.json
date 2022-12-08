@@ -82,14 +82,16 @@
               }
             ],
             "firefox_android": {
-              "version_added": "55"
+              "version_added": false
             },
             "ie": {
               "version_added": false
             },
             "oculus": "mirror",
             "opera": "mirror",
-            "opera_android": "mirror",
+            "opera_android": {
+              "version_added": false
+            },
             "safari": {
               "version_added": false
             },
@@ -579,7 +581,9 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": {
+              "version_added": "≤103"
+            }
           },
           "status": {
             "experimental": true,
@@ -1294,7 +1298,7 @@
               }
             ],
             "firefox_android": {
-              "version_added": "55"
+              "version_added": false
             },
             "ie": {
               "version_added": false
@@ -1303,7 +1307,9 @@
             "opera": {
               "version_added": false
             },
-            "opera_android": "mirror",
+            "opera_android": {
+              "version_added": false
+            },
             "safari": {
               "version_added": false
             },
@@ -2172,7 +2178,7 @@
           "status": {
             "experimental": false,
             "standard_track": true,
-            "deprecated": true
+            "deprecated": false
           }
         }
       },
@@ -3735,7 +3741,7 @@
             "edge": "mirror",
             "firefox": [
               {
-                "version_added": "preview"
+                "version_added": false
               },
               {
                 "version_added": "97",
@@ -3997,7 +4003,9 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": {
+              "version_added": "≤103"
+            }
           },
           "status": {
             "experimental": true,
@@ -4458,7 +4466,7 @@
           "status": {
             "experimental": false,
             "standard_track": true,
-            "deprecated": true
+            "deprecated": false
           }
         }
       },
