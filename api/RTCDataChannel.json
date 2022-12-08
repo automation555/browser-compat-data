@@ -13,9 +13,7 @@
           "firefox": {
             "version_added": "22"
           },
-          "firefox_android": {
-            "version_added": "24"
-          },
+          "firefox_android": "mirror",
           "ie": {
             "version_added": false
           },
@@ -48,9 +46,7 @@
             "firefox": {
               "version_added": "22"
             },
-            "firefox_android": {
-              "version_added": "24"
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -82,9 +78,7 @@
               "firefox": {
                 "version_added": "22"
               },
-              "firefox_android": {
-                "version_added": "24"
-              },
+              "firefox_android": "mirror",
               "ie": {
                 "version_added": false
               },
@@ -121,9 +115,7 @@
               "firefox": {
                 "version_added": "22"
               },
-              "firefox_android": {
-                "version_added": "24"
-              },
+              "firefox_android": "mirror",
               "ie": {
                 "version_added": false
               },
@@ -167,9 +159,7 @@
             "firefox": {
               "version_added": "22"
             },
-            "firefox_android": {
-              "version_added": "24"
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -200,7 +190,7 @@
           ],
           "support": {
             "chrome": {
-              "version_added": "57",
+              "version_added": "46",
               "notes": "The default for <code>rtcpMuxPolicy</code> is <code>require</code>."
             },
             "chrome_android": "mirror",
@@ -276,9 +266,7 @@
             "firefox": {
               "version_added": "22"
             },
-            "firefox_android": {
-              "version_added": "24"
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -316,9 +304,7 @@
             "firefox": {
               "version_added": "22"
             },
-            "firefox_android": {
-              "version_added": "24"
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -394,9 +380,7 @@
             "firefox": {
               "version_added": "22"
             },
-            "firefox_android": {
-              "version_added": "24"
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -430,9 +414,7 @@
             "firefox": {
               "version_added": "22"
             },
-            "firefox_android": {
-              "version_added": "24"
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -466,9 +448,7 @@
             "firefox": {
               "version_added": "22"
             },
-            "firefox_android": {
-              "version_added": "24"
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -495,7 +475,7 @@
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-datachannel-maxpacketlifetime",
           "support": {
             "chrome": {
-              "version_added": "56"
+              "version_added": "78"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -574,9 +554,7 @@
             "firefox": {
               "version_added": "22"
             },
-            "firefox_android": {
-              "version_added": "24"
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -648,9 +626,7 @@
             "firefox": {
               "version_added": "22"
             },
-            "firefox_android": {
-              "version_added": "24"
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -684,9 +660,7 @@
             "firefox": {
               "version_added": "22"
             },
-            "firefox_android": {
-              "version_added": "24"
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -753,9 +727,7 @@
             "firefox": {
               "version_added": "22"
             },
-            "firefox_android": {
-              "version_added": "24"
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -789,9 +761,7 @@
             "firefox": {
               "version_added": "22"
             },
-            "firefox_android": {
-              "version_added": "24"
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -824,9 +794,7 @@
             "firefox": {
               "version_added": "22"
             },
-            "firefox_android": {
-              "version_added": "24"
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -893,9 +861,7 @@
             "firefox": {
               "version_added": "22"
             },
-            "firefox_android": {
-              "version_added": "24"
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },

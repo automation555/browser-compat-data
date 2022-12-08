@@ -22,7 +22,7 @@
             ],
             "chrome_android": "mirror",
             "edge": {
-              "version_added": "17"
+              "version_added": "79"
             },
             "firefox": [
               {
@@ -45,7 +45,9 @@
                 ]
               }
             ],
-            "firefox_android": "mirror",
+            "firefox_android": {
+              "version_added": "103"
+            },
             "ie": {
               "version_added": false
             },
