@@ -16,6 +16,7 @@ import bcd from '../index.js';
 export default (path: string, data: DataType = bcd): DataType => {
   const pathElements = path.split('.');
   let lookup = data;
+  let lookup1 = data;
   while (pathElements.length) {
     const next = pathElements.shift();
     if (!next) {
